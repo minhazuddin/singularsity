@@ -1,0 +1,114 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .highlight-text { animation: highlight 3s ease-in-out infinite; }
+    .sentiment-meter { animation: sentiment 4s ease-in-out infinite; }
+    .entity { animation: pulse 2s ease-in-out infinite; }
+    
+    @keyframes highlight {
+      0%, 100% { fill-opacity: 0.7; }
+      50% { fill-opacity: 1; }
+    }
+    @keyframes sentiment {
+      0% { width: 50px; }
+      50% { width: 120px; }
+      100% { width: 50px; }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.8; }
+      50% { opacity: 1; }
+    }
+  </style>
+  
+  <!-- Background -->
+  <rect width="600" height="400" rx="20" fill="#326442" opacity="0.05"/>
+  
+  <!-- NLP Document Frame -->
+  <rect x="50" y="50" width="500" height="300" rx="10" fill="#ffffff" stroke="#326442" stroke-width="2"/>
+  
+  <!-- Header Bar -->
+  <rect x="50" y="50" width="500" height="40" rx="10" fill="#326442"/>
+  <text x="70" y="75" font-family="Arial" font-size="16" fill="white" font-weight="bold">Synthetic Text Analysis</text>
+  <circle cx="520" cy="70" r="10" fill="#72ad38"/>
+  <circle cx="490" cy="70" r="10" fill="#3f6e29"/>
+  
+  <!-- Text Content Area -->
+  <rect x="70" y="110" width="460" height="220" rx="5" fill="#f8f9fa"/>
+  
+  <!-- Synthetic Text Paragraph -->
+  <g font-family="Arial" font-size="14" fill="#333333">
+    <!-- Line 1 -->
+    <text x="85" y="130">The</text>
+    <rect x="110" y="120" width="60" height="16" rx="3" fill="#72ad38" opacity="0.3" class="entity"/>
+    <text x="115" y="130" fill="#326442" font-weight="bold" class="highlight-text">company</text>
+    <text x="175" y="130">announced its new</text>
+    <rect x="285" y="120" width="50" height="16" rx="3" fill="#3f6e29" opacity="0.3" class="entity"/>
+    <text x="290" y="130" fill="#3f6e29" font-weight="bold" class="highlight-text">product</text>
+    <text x="345" y="130">today.</text>
+    
+    <!-- Line 2 -->
+    <text x="85" y="155">The event took place in</text>
+    <rect x="220" y="145" width="85" height="16" rx="3" fill="#72ad38" opacity="0.3" class="entity"/>
+    <text x="225" y="155" fill="#326442" font-weight="bold" class="highlight-text">San Francisco</text>
+    <text x="315" y="155">at 3 PM.</text>
+    
+    <!-- Line 3 -->
+    <text x="85" y="180">CEO</text>
+    <rect x="115" y="170" width="90" height="16" rx="3" fill="#72ad38" opacity="0.3" class="entity"/>
+    <text x="120" y="180" fill="#326442" font-weight="bold" class="highlight-text">John Williams</text>
+    <text x="215" y="180">discussed how the</text>
+    <rect x="340" y="170" width="110" height="16" rx="3" fill="#3f6e29" opacity="0.3" class="entity"/>
+    <text x="345" y="180" fill="#3f6e29" font-weight="bold" class="highlight-text">new technology</text>
+    
+    <!-- Line 4 -->
+    <text x="85" y="205">will change the industry. The market responded</text>
+    
+    <!-- Line 5 -->
+    <text x="85" y="230">positively, with stock prices increasing by 5%.</text>
+    
+    <!-- Line 6 -->
+    <text x="85" y="255">Analysts from</text>
+    <rect x="175" y="245" width="95" height="16" rx="3" fill="#72ad38" opacity="0.3" class="entity"/>
+    <text x="180" y="255" fill="#326442" font-weight="bold" class="highlight-text">Morgan Stanley</text>
+    <text x="280" y="255">predict continued growth.</text>
+    
+    <!-- Line 7 -->
+    <text x="85" y="280">The product will launch in</text>
+    <rect x="240" y="270" width="60" height="16" rx="3" fill="#72ad38" opacity="0.3" class="entity"/>
+    <text x="245" y="280" fill="#326442" font-weight="bold" class="highlight-text">Q4 2023</text>
+    <text x="310" y="280">.</text>
+  </g>
+  
+  <!-- NLP Analysis Elements -->
+  <!-- Entity Legend -->
+  <rect x="70" y="310" width="15" height="15" rx="2" fill="#72ad38" opacity="0.3"/>
+  <text x="90" y="322" font-family="Arial" font-size="12" fill="#326442">Named Entity</text>
+  
+  <rect x="180" y="310" width="15" height="15" rx="2" fill="#3f6e29" opacity="0.3"/>
+  <text x="200" y="322" font-family="Arial" font-size="12" fill="#326442">Product/Tech</text>
+  
+  <!-- Sentiment Analysis -->
+  <text x="310" y="322" font-family="Arial" font-size="12" fill="#326442">Sentiment:</text>
+  <rect x="375" y="310" width="130" height="15" rx="7.5" fill="#f0f0f0" stroke="#326442" stroke-width="1"/>
+  <rect x="375" y="310" width="85" height="15" rx="7.5" fill="#72ad38" class="sentiment-meter"/>
+  <text x="420" y="322" font-family="Arial" font-size="11" fill="#fff" text-anchor="middle">Positive</text>
+  
+  <!-- Tag Icons -->
+  <g fill="#326442" opacity="0.7">
+    <circle cx="50" cy="130" r="3"/>
+    <circle cx="50" cy="155" r="3"/>
+    <circle cx="50" cy="180" r="3"/>
+    <circle cx="50" cy="205" r="3"/>
+    <circle cx="50" cy="230" r="3"/>
+    <circle cx="50" cy="255" r="3"/>
+    <circle cx="50" cy="280" r="3"/>
+  </g>
+  
+  <!-- Binary Representation -->
+  <text x="540" y="130" font-family="Courier New" font-size="8" fill="#326442" opacity="0.5">01001</text>
+  <text x="540" y="155" font-family="Courier New" font-size="8" fill="#326442" opacity="0.5">10110</text>
+  <text x="540" y="180" font-family="Courier New" font-size="8" fill="#326442" opacity="0.5">11001</text>
+  <text x="540" y="205" font-family="Courier New" font-size="8" fill="#326442" opacity="0.5">01010</text>
+  <text x="540" y="230" font-family="Courier New" font-size="8" fill="#326442" opacity="0.5">10101</text>
+  <text x="540" y="255" font-family="Courier New" font-size="8" fill="#326442" opacity="0.5">01101</text>
+  <text x="540" y="280" font-family="Courier New" font-size="8" fill="#326442" opacity="0.5">11010</text>
+</svg> 

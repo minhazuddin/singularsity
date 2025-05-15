@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singularsity - Synthetic Data for AI models</title>
+    <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%23238c44%22/><text x=%2250%22 y=%2270%22 font-family=%22Arial, sans-serif%22 font-size=%2260%22 font-weight=%22bold%22 text-anchor=%22middle%22 fill=%22white%22>S</text></svg>" type="image/x-icon">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Critical CSS Overrides -->
+    <style>
+        :root {
+            --bs-primary: #326442 !important;
+            --bs-primary-rgb: 50, 100, 66 !important;
+        }
+        .bg-primary, .badge.bg-primary {
+            background-color: #326442 !important;
+        }
+        .btn-primary {
+            background-color: #238c44 !important;
+            border-color: #238c44 !important;
+            color: white !important;
+            font-weight: 400 !important;
+        }
+        .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+            background-color: #72ad38 !important;
+            border-color: #72ad38 !important;
+        }
+        .btn-outline-light {
+            font-weight: 400 !important;
+        }
+        .text-primary {
+            color: #326442 !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="logo-small.png" alt="Singularsity Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#use-cases">Use Cases</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-primary" href="#" style="padding: 8px 20px; margin-top: 2px; border-radius: 50px;">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="display-4" style="font-weight: 400;">The Future of AI Starts with Smarter Synthetic Data</h1>
+                    <p class="lead">Powering the next generation of AI models with high-quality, diverse, and privacy-compliant synthetic data.</p>
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-primary btn-lg" style="font-weight: 400; background-color: #238c44; border-color: #238c44;">Get Started</a>
+                        <a href="#services" class="btn btn-outline-light btn-lg ms-3" style="font-weight: 400;">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="src/assets/images/hero-illustration.svg" alt="AI Data Illustration" class="img-fluid hero-image">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-heading">About Singularsity</h2>
+                    <hr class="divider">
+                    <p class="text-muted mb-5">Singularsity is a pioneering synthetic data provider empowering startups building AI models. We address the critical data shortage faced by innovative companies by generating high-quality, customized synthetic datasets that are indistinguishable from real-world data but without the privacy, security, and regulatory concerns.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="50">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-5">
+                            <i class="fas fa-code fa-3x mb-3 icon-primary"></i>
+                            <h3 class="h4 card-title">Cutting-Edge Technology</h3>
+                            <p class="card-text">Our proprietary algorithms generate realistic data that preserves statistical relationships and edge cases.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-5">
+                            <i class="fas fa-shield-alt fa-3x mb-3 icon-primary"></i>
+                            <h3 class="h4 card-title">Privacy by Design</h3>
+                            <p class="card-text">Our synthetic datasets completely eliminate privacy concerns while maintaining data utility.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-5">
+                            <i class="fas fa-rocket fa-3x mb-3 icon-primary"></i>
+                            <h3 class="h4 card-title">AI-Focused</h3>
+                            <p class="card-text">We understand AI training needs and optimize our synthetic data for machine learning workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-heading">Our Services</h2>
+                    <hr class="divider">
+                    <p class="text-muted mb-5">We provide comprehensive synthetic data solutions tailored to your AI development needs.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="service-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3 class="h4 mb-0">Custom Dataset Generation</h3>
+                        </div>
+                        <p>Tailor-made synthetic datasets that match your specific AI model requirements. We can generate data across various domains including images, text, tabular data, and time series.</p>
+                        <ul class="list-unstyled service-features">
+                            <li><i class="fas fa-check-circle text-success"></i> Domain-specific customization</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Edge case generation</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Controllable characteristics</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="service-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3 class="h4 mb-0">Data Augmentation</h3>
+                        </div>
+                        <p>Enhance your existing datasets with synthetic samples to improve model robustness, address class imbalances, and increase training data volume.</p>
+                        <ul class="list-unstyled service-features">
+                            <li><i class="fas fa-check-circle text-success"></i> Minority class augmentation</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Distribution matching</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Noise reduction</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="service-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h3 class="h4 mb-0">Privacy-Preserving Alternatives</h3>
+                        </div>
+                        <p>Replace sensitive real-world data with synthetic alternatives that preserve statistical properties while eliminating privacy and regulatory concerns.</p>
+                        <ul class="list-unstyled service-features">
+                            <li><i class="fas fa-check-circle text-success"></i> GDPR/CCPA compliant</li>
+                            <li><i class="fas fa-check-circle text-success"></i> De-identified data generation</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Privacy guarantees</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="service-card p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="service-icon me-3">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3 class="h4 mb-0">API Integration</h3>
+                        </div>
+                        <p>Seamlessly integrate our synthetic data generation capabilities into your ML pipeline through our robust API solutions.</p>
+                        <ul class="list-unstyled service-features">
+                            <li><i class="fas fa-check-circle text-success"></i> On-demand generation</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Pipeline compatibility</li>
+                            <li><i class="fas fa-check-circle text-success"></i> Customizable parameters</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-heading">Our Solutions</h2>
+                    <hr class="divider">
+                    <p class="text-muted mb-5">Discover how our synthetic data solutions can accelerate your AI development across various domains.</p>
+                </div>
+            </div>
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                    <img src="src/assets/images/solution-cv.svg" alt="Computer Vision Solution" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                    <h3>Computer Vision Data</h3>
+                    <p>Generate synthetic images and videos that help train robust computer vision models without the expense and limitations of collecting and annotating real-world visual data.</p>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Object detection training datasets</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Segmentation masks and annotations</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Diverse environmental conditions</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i> Rare event simulation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="src/assets/images/solution-nlp.svg" alt="NLP Solution" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3>Natural Language Processing Data</h3>
+                    <p>Create diverse text datasets that preserve linguistic patterns while enhancing your NLP models with broader context understanding and edge case handling.</p>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Conversational datasets</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Domain-specific corpus generation</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Multi-lingual text synthesis</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i> Named entity masking and replacement</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                    <img src="src/assets/images/solution-tabular.svg" alt="Tabular Data Solution" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                    <h3>Tabular and Time Series Data</h3>
+                    <p>Generate structured data that maintains statistical relationships, correlations, and temporal patterns for training predictive models without privacy concerns.</p>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Financial transaction datasets</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Healthcare record simulation</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Sensor data generation</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i> Anomaly insertion and detection</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-heading">Use Cases</h2>
+                    <hr class="divider">
+                    <p class="text-muted mb-5">See how startups across industries are leveraging our synthetic data to build cutting-edge AI solutions.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="flip-up" data-aos-delay="50">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="badge bg-primary mb-2">Healthcare</div>
+                            <h4 class="card-title">Medical Imaging Diagnostics</h4>
+                            <p class="card-text">A healthcare AI startup used our synthetic medical imaging data to train diagnostic models for rare conditions, overcoming the limited availability of real patient scans.</p>
+                            <p class="text-muted"><strong>Results:</strong> 40% improvement in rare condition detection with 65% less data collection cost.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="flip-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="badge bg-primary mb-2">Finance</div>
+                            <h4 class="card-title">Fraud Detection Systems</h4>
+                            <p class="card-text">A fintech startup leveraged our synthetic transaction data to enhance their fraud detection models without exposing sensitive customer financial information.</p>
+                            <p class="text-muted"><strong>Results:</strong> 53% reduction in false positives while maintaining 98% detection accuracy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="flip-up" data-aos-delay="150">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="badge bg-primary mb-2">Autonomous Systems</div>
+                            <h4 class="card-title">Edge Case Navigation</h4>
+                            <p class="card-text">A robotics startup used our synthetic environmental data to train navigation models for handling rare and dangerous scenarios without real-world testing risks.</p>
+                            <p class="text-muted"><strong>Results:</strong> 78% increase in edge case handling with zero safety incidents.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="flip-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="badge bg-primary mb-2">Cybersecurity</div>
+                            <h4 class="card-title">Threat Detection</h4>
+                            <p class="card-text">A security startup utilized our synthetic network traffic data to train anomaly detection systems capable of identifying novel attack patterns.</p>
+                            <p class="text-muted"><strong>Results:</strong> 67% faster detection of zero-day threats compared to traditional methods.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="flip-up" data-aos-delay="250">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="badge bg-primary mb-2">Retail</div>
+                            <h4 class="card-title">Customer Behavior Analysis</h4>
+                            <p class="card-text">An e-commerce startup used our synthetic customer journey data to optimize recommendation systems without compromising real customer privacy.</p>
+                            <p class="text-muted"><strong>Results:</strong> 32% increase in conversion rates while achieving full GDPR compliance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="flip-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="badge bg-primary mb-2">Manufacturing</div>
+                            <h4 class="card-title">Predictive Maintenance</h4>
+                            <p class="card-text">An industrial IoT startup leveraged our synthetic sensor data to train predictive maintenance models that could detect equipment failures before they occurred.</p>
+                            <p class="text-muted"><strong>Results:</strong> 45% reduction in unplanned downtime and 28% maintenance cost savings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-heading">Get In Touch</h2>
+                    <hr class="divider">
+                    <p class="text-muted mb-5">Ready to unlock the potential of synthetic data for your AI models? Contact us today to discuss your specific needs.</p>
+                </div>
+            </div>
+            <div class="row contact-wrapper bg-white rounded-4 shadow p-3 p-md-5 mx-0 mx-md-2">
+                <div class="col-lg-5 text-center text-lg-start pe-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info-card p-4 h-100 d-flex flex-column justify-content-center">
+                        <h3 class="mb-4 text-white">Contact Information</h3>
+                        <p class="text-white-50 mb-5">Reach out to us - we're here to help with your synthetic data needs.</p>
+                        
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="icon-circle me-3">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white-50 mb-1">Email</h6>
+                                <p class="text-white mb-0">contact@singularsity.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item d-flex align-items-center mb-4">
+                            <div class="icon-circle me-3">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white-50 mb-1">Office</h6>
+                                <p class="text-white mb-0">123 Innovation Drive<br>San Francisco, CA 94107</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item d-flex align-items-center">
+                            <div class="icon-circle me-3">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white-50 mb-1">Phone</h6>
+                                <p class="text-white mb-0">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social mt-5">
+                            <a href="#" class="icon-circle-sm me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="icon-circle-sm me-2"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="icon-circle-sm"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 ps-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-form-wrapper bg-white p-4 h-100">
+                        <h3 class="mb-4" style="color: #326442;">Send a Message</h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" id="name" name="from_name" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" id="email" name="reply_to" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-control" id="inquiry" name="inquiry_type" required>
+                                    <option value="" disabled selected>Type of Inquiry</option>
+                                    <option value="Custom Dataset Generation">Custom Dataset Generation</option>
+                                    <option value="Data Augmentation">Data Augmentation</option>
+                                    <option value="Privacy-Preserving Alternatives">Privacy-Preserving Alternatives</option>
+                                    <option value="API Integration">API Integration</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="d-grid mb-3">
+                                <button type="submit" class="btn btn-primary btn-lg" id="submit-btn" style="font-weight: 400; background-color: #238c44; border-color: #238c44; border-radius: 50px;">
+                                    <span id="button-text">Send Message</span>
+                                    <span id="button-spinner" class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="alert alert-success d-none" id="success-message">
+                                Your message has been sent successfully! We'll get back to you soon.
+                            </div>
+                            <div class="alert alert-danger d-none" id="error-message">
+                                Sorry, there was an error sending your message. Please try again later.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="logo-small.png" alt="Singularsity Logo" class="footer-logo mb-3" style="height: 32px; width: auto; display: block; opacity: 1; filter: brightness(0) invert(1);">
+                    <p>Empowering AI innovation through synthetic data solutions that make the impossible possible.</p>
+                    <div class="social-icons">
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 style="font-weight: 400 !important;">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#use-cases">Use Cases</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 style="font-weight: 400 !important;">Resources</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 style="font-weight: 400 !important;">Newsletter</h5>
+                    <p>Stay updated with the latest in synthetic data and AI.</p>
+                    <form class="d-flex newsletter-form">
+                        <input type="email" class="form-control me-2" placeholder="Your Email">
+                        <button class="btn btn-outline-light subscribe-btn" type="submit" style="font-weight: 400 !important;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 copyright-text">&copy; <span id="current-year"></span> Singularsity. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none privacy-link" style="color: rgba(255, 255, 255, 0.8);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgba(255, 255, 255, 0.8)'">Privacy Policy</a></li>
+                        <li class="list-inline-item"><span class="text-white mx-2">|</span></li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none privacy-link" style="color: rgba(255, 255, 255, 0.8);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgba(255, 255, 255, 0.8)'">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html> 
