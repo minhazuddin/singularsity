@@ -1,7 +1,7 @@
 'use client'
 
 import { motion, AnimatePresence } from 'framer-motion'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo, useCallback } from 'react'
 import { User, CreditCard, Settings as SettingsIcon, Bell, Shield, ArrowLeft, Save, Check, AlertTriangle, Camera, Upload, Link as LinkIcon, Sparkles, Clock, Activity, Zap, RefreshCw, ChevronDown, Eye, EyeOff, Key, Smartphone, Globe, Lock, Users, Database, TrendingUp, TrendingDown, Plus, Trash2 } from 'lucide-react'
 import Navigation from '../../../components/Navigation'
 import ConsoleSidebar, { useSidebar, SidebarProvider, useMainContentClass } from '../../../components/ConsoleSidebar'
@@ -162,7 +162,7 @@ export default function ConsoleSettings() {
   const [newWebhookUrl, setNewWebhookUrl] = useState('')
   const [showNewWebhookModal, setShowNewWebhookModal] = useState(false)
 
-  // Live updates
+  // Live updates - optimized to prevent unnecessary re-renders
   useEffect(() => {
     const statsInterval = setInterval(() => {
       setLiveStats(prev => ({
@@ -171,7 +171,7 @@ export default function ConsoleSettings() {
         lastBackup: prev.lastBackup
       }))
       setLastUpdated(new Date())
-    }, 5000)
+    }, 30000) // Reduced frequency to 30 seconds to prevent blinking
 
     return () => {
       clearInterval(statsInterval)
@@ -194,13 +194,13 @@ export default function ConsoleSettings() {
     setLoading(false)
   }, [router, searchParams])
 
-  const tabs = [
+  const tabs = useMemo(() => [
     { id: 'account', name: 'Account', icon: User, description: 'Profile and personal information' },
     { id: 'plan', name: 'Plan & Billing', icon: CreditCard, description: 'Subscription and usage details' },
     { id: 'api', name: 'API Settings', icon: Key, description: 'API keys and integration settings' },
     { id: 'notifications', name: 'Notifications', icon: Bell, description: 'Email and alert preferences' },
     { id: 'security', name: 'Security', icon: Shield, description: 'Privacy and security settings' }
-  ]
+  ], [])
 
   const plans = [
     {
@@ -243,7 +243,15 @@ export default function ConsoleSettings() {
     { value: 365, label: '1 year', description: 'Maximum retention' }
   ]
 
-  const handleSave = (section?: string) => {
+  const handleTabHover = useCallback((tabId: string | null) => {
+    setHoveredTab(tabId)
+  }, [])
+
+  const handleTabClick = useCallback((tabId: string) => {
+    setActiveTab(tabId)
+  }, [])
+
+  const handleSave = useCallback((section?: string) => {
     setSavingState(section || 'general')
     setSaved(true)
     setIsEditingUsername(false)
@@ -278,7 +286,7 @@ export default function ConsoleSettings() {
         setToastNotification(prev => ({ ...prev, show: false }))
       }, 5000)
     }, 2000) // Simulate 2 second API call
-  }
+  }, [])
 
   const handleRefresh = async () => {
     setIsRefreshing(true)
@@ -567,7 +575,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                       onClick={() => setActiveTab(tab.id)}
                       onMouseEnter={() => setHoveredTab(tab.id)}
                       onMouseLeave={() => setHoveredTab(null)}
-                      className={`w-full flex items-center px-4 py-3 text-left rounded-xl transition-all duration-300 text-sm relative overflow-hidden ${
+                      className={`w-full flex items-center px-4 py-3 text-left rounded-xl text-sm relative overflow-hidden ${
                         isActive
                           ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg'
                           : 'text-gray-600 hover:bg-gray-50 hover:shadow-md'
@@ -576,46 +584,49 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                       whileTap={{ scale: 0.98 }}
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1, duration: 0.4, ease: "easeOut" }}
+                      transition={{ 
+                        delay: index * 0.1,
+                        duration: 0.3,
+                        ease: "easeOut"
+                      }}
+                      layout={false}
                     >
                       {/* Background gradient for hover */}
-                      <AnimatePresence mode="wait">
+                      <AnimatePresence>
                         {isHovered && !isActive && (
                           <motion.div
-                            key={`hover-${tab.id}`}
                             className="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            transition={{ duration: 0.15, ease: "easeOut" }}
+                            transition={{ duration: 0.2 }}
                           />
                         )}
                       </AnimatePresence>
                       
                       <div className="relative z-10 flex items-center w-full">
                         <div className="mr-3">
-                          <IconComponent className={`h-5 w-5 transition-colors duration-300 ${
+                          <IconComponent className={`h-5 w-5 transition-colors duration-200 ${
                             isActive ? 'text-white' : 'text-gray-500'
                           }`} />
                         </div>
                         
                         <div className="flex-1">
-                          <div className="font-medium transition-colors duration-300">{tab.name}</div>
-                          <div className={`text-xs mt-0.5 transition-colors duration-300 ${
+                          <div className="font-medium transition-colors duration-200">{tab.name}</div>
+                          <div className={`text-xs mt-0.5 transition-colors duration-200 ${
                             isActive ? 'text-white/80' : 'text-gray-400'
                           }`}>
                             {tab.description}
                           </div>
                         </div>
                         
-                        <AnimatePresence mode="wait">
+                        <AnimatePresence>
                           {isActive && (
                             <motion.div
-                              key={`indicator-${tab.id}`}
                               initial={{ scale: 0, opacity: 0 }}
                               animate={{ scale: 1, opacity: 1 }}
                               exit={{ scale: 0, opacity: 0 }}
-                              transition={{ duration: 0.2, ease: "easeOut" }}
+                              transition={{ duration: 0.2 }}
                               className="w-2 h-2 bg-white rounded-full"
                             />
                           )}
