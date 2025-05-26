@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Enhanced animations for hero section */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 0.3;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes data-flow {
+  0% { 
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% { 
+    opacity: 0.6;
+  }
+  100% { 
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+}
+
+.hero-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+.data-particle {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.data-stream {
+  animation: data-flow 15s linear infinite;
+}
+
+/* Subtle gradient mesh background */
+.mesh-gradient {
+  background: 
+    radial-gradient(circle at 25% 25%, rgba(35, 140, 68, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(35, 140, 68, 0.05) 0%, transparent 50%);
+}
+
+/* Glitch effects for 404 page */
+@keyframes glitch-animation {
+  0% { transform: translate(0); }
+  10% { transform: translate(-5px, -5px); }
+  20% { transform: translate(-5px, 5px); }
+  30% { transform: translate(5px, 5px); }
+  40% { transform: translate(5px, -5px); }
+  50% { transform: translate(-5px, -5px); }
+  60% { transform: translate(-5px, 5px); }
+  70% { transform: translate(5px, 5px); }
+  80% { transform: translate(-5px, -5px); }
+  90% { transform: translate(5px, 5px); }
+  100% { transform: translate(0); }
+}
+
+@keyframes data-corruption {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; filter: blur(2px); }
+}
+
+@keyframes cyber-pulse {
+  0%, 100% { 
+    box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000;
+    opacity: 1;
+  }
+  50% { 
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+    opacity: 0.8;
+  }
+}
+
+.glitch-text {
+  animation: glitch-animation 0.3s infinite;
+}
+
+.data-corrupt {
+  animation: data-corruption 2s infinite;
+}
+
+.cyber-glow {
+  animation: cyber-pulse 2s infinite;
+}
+
+/* Terminal cursor */
+@keyframes cursor-blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.terminal-cursor {
+  animation: cursor-blink 1s infinite;
+}
+
+/* Custom text size utilities */
+.text-custom-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+/* Custom checkbox styling */
+input[type="checkbox"]:checked {
+  background-color: #059669 !important;
+  border-color: #059669 !important;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m13.854 3.646-7.5 7.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6 10.293l7.146-7.147a.5.5 0 0 1 .708.708z'/%3e%3c/svg%3e") !important;
+}
+
+input[type="checkbox"]:focus {
+  --tw-ring-color: #059669 !important;
+  border-color: #059669 !important;
+  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1) !important;
+}
+
+input[type="checkbox"]:hover {
+  border-color: #059669 !important;
+}
+
+/* Override Tailwind's checkbox accent color */
+input[type="checkbox"] {
+  accent-color: #059669 !important;
+} 
