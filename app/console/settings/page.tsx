@@ -576,44 +576,50 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                       whileTap={{ scale: 0.98 }}
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1 }}
+                      transition={{ delay: index * 0.1, duration: 0.4, ease: "easeOut" }}
                     >
                       {/* Background gradient for hover */}
-                      {isHovered && !isActive && (
-                        <motion.div
-                          className="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5"
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          exit={{ opacity: 0 }}
-                        />
-                      )}
+                      <AnimatePresence mode="wait">
+                        {isHovered && !isActive && (
+                          <motion.div
+                            key={`hover-${tab.id}`}
+                            className="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.15, ease: "easeOut" }}
+                          />
+                        )}
+                      </AnimatePresence>
                       
                       <div className="relative z-10 flex items-center w-full">
-                        <motion.div
-                          animate={isActive ? { rotate: 360 } : { rotate: 0 }}
-                          transition={{ duration: 0.5 }}
-                        >
-                          <IconComponent className={`h-5 w-5 mr-3 ${
+                        <div className="mr-3">
+                          <IconComponent className={`h-5 w-5 transition-colors duration-300 ${
                             isActive ? 'text-white' : 'text-gray-500'
                           }`} />
-                        </motion.div>
+                        </div>
                         
                         <div className="flex-1">
-                          <div className="font-medium">{tab.name}</div>
-                          <div className={`text-xs mt-0.5 ${
+                          <div className="font-medium transition-colors duration-300">{tab.name}</div>
+                          <div className={`text-xs mt-0.5 transition-colors duration-300 ${
                             isActive ? 'text-white/80' : 'text-gray-400'
                           }`}>
                             {tab.description}
                           </div>
                         </div>
                         
-                        {isActive && (
-                          <motion.div
-                            initial={{ scale: 0 }}
-                            animate={{ scale: 1 }}
-                            className="w-2 h-2 bg-white rounded-full"
-                          />
-                        )}
+                        <AnimatePresence mode="wait">
+                          {isActive && (
+                            <motion.div
+                              key={`indicator-${tab.id}`}
+                              initial={{ scale: 0, opacity: 0 }}
+                              animate={{ scale: 1, opacity: 1 }}
+                              exit={{ scale: 0, opacity: 0 }}
+                              transition={{ duration: 0.2, ease: "easeOut" }}
+                              className="w-2 h-2 bg-white rounded-full"
+                            />
+                          )}
+                        </AnimatePresence>
                       </div>
                     </motion.button>
                   )
