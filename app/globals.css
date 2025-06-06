@@ -180,4 +180,442 @@ input[type="checkbox"]:hover {
 /* Override Tailwind's checkbox accent color */
 input[type="checkbox"] {
   accent-color: #059669 !important;
+}
+
+/* Custom styles for primary and secondary colors */
+.text-primary {
+  color: #059669;
+}
+
+.bg-primary {
+  background-color: #059669;
+}
+
+.border-primary {
+  border-color: #059669;
+}
+
+.text-secondary {
+  color: #10B981;
+}
+
+.bg-secondary {
+  background-color: #10B981;
+}
+
+/* Gradient backgrounds */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+}
+
+/* Button variants */
+.btn-primary {
+  @apply bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors;
+}
+
+.btn-outline {
+  @apply border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-colors;
+}
+
+/* Custom slider styles (replacing react-slider) */
+.slider {
+  width: 100%;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.slider-track {
+  height: 8px;
+  background: #10b981;
+  border-radius: 4px;
+}
+
+.slider-thumb {
+  width: 20px;
+  height: 20px;
+  background: #10b981;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: -6px;
+}
+
+.slider-thumb:hover {
+  background: #059669;
+}
+
+.slider-thumb:active {
+  transform: scale(1.1);
+}
+
+/* Loading animations */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Data table styles */
+.data-table {
+  @apply min-w-full divide-y divide-gray-200;
+}
+
+.data-table th {
+  @apply px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.data-table td {
+  @apply px-6 py-4 whitespace-nowrap text-sm text-gray-900;
+}
+
+.data-table tr:nth-child(even) {
+  @apply bg-gray-50;
+}
+
+/* Progress bars */
+.progress-bar {
+  @apply w-full bg-gray-200 rounded-full h-2;
+}
+
+.progress-fill {
+  @apply h-2 rounded-full transition-all duration-300;
+}
+
+/* Status indicators */
+.status-dot {
+  @apply w-2 h-2 rounded-full;
+}
+
+.status-success {
+  @apply bg-green-500;
+}
+
+.status-warning {
+  @apply bg-yellow-500;
+}
+
+.status-error {
+  @apply bg-red-500;
+}
+
+.status-info {
+  @apply bg-blue-500;
+}
+
+/* Card hover effects */
+.card-hover {
+  @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-1;
+}
+
+/* Metric cards */
+.metric-card {
+  @apply bg-white rounded-lg border p-6 shadow-sm hover:shadow-md transition-shadow duration-200;
+}
+
+/* File upload area */
+.upload-area {
+  @apply border-2 border-dashed border-gray-300 rounded-lg p-8 text-center cursor-pointer transition-colors;
+}
+
+.upload-area:hover {
+  @apply border-gray-400 bg-gray-50;
+}
+
+.upload-area.drag-active {
+  @apply border-blue-500 bg-blue-50;
+}
+
+/* Tabs */
+.tab-button {
+  @apply px-4 py-2 text-sm font-medium border-b-2 transition-colors;
+}
+
+.tab-button.active {
+  @apply border-blue-500 text-blue-600;
+}
+
+.tab-button.inactive {
+  @apply border-transparent text-gray-500 hover:text-gray-700;
+}
+
+/* Badge styles */
+.badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.badge-success {
+  @apply bg-green-100 text-green-800;
+}
+
+.badge-warning {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.badge-error {
+  @apply bg-red-100 text-red-800;
+}
+
+.badge-info {
+  @apply bg-blue-100 text-blue-800;
+}
+
+/* Tooltip styles */
+.tooltip {
+  @apply absolute z-50 px-3 py-2 text-sm text-white bg-gray-900 rounded-lg shadow-sm;
+}
+
+/* Form styles */
+.form-input {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 mb-2;
+}
+
+.form-error {
+  @apply text-sm text-red-600 mt-1;
+}
+
+/* Chart container */
+.chart-container {
+  @apply bg-white rounded-lg border p-6;
+}
+
+/* Privacy score indicators */
+.privacy-high {
+  @apply text-green-600 bg-green-100;
+}
+
+.privacy-medium {
+  @apply text-yellow-600 bg-yellow-100;
+}
+
+.privacy-low {
+  @apply text-red-600 bg-red-100;
+}
+
+/* Bias level indicators */
+.bias-low {
+  @apply text-green-600 bg-green-100;
+}
+
+.bias-medium {
+  @apply text-yellow-600 bg-yellow-100;
+}
+
+.bias-high {
+  @apply text-red-600 bg-red-100;
+}
+
+/* Quality score indicators */
+.quality-excellent {
+  @apply text-green-600 bg-green-100;
+}
+
+.quality-good {
+  @apply text-blue-600 bg-blue-100;
+}
+
+.quality-fair {
+  @apply text-yellow-600 bg-yellow-100;
+}
+
+.quality-poor {
+  @apply text-red-600 bg-red-100;
+}
+
+/* Correlation strength indicators */
+.correlation-strong {
+  @apply text-purple-600 bg-purple-100;
+}
+
+.correlation-moderate {
+  @apply text-blue-600 bg-blue-100;
+}
+
+.correlation-weak {
+  @apply text-gray-600 bg-gray-100;
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.pulse-slow {
+  animation: pulse 3s infinite;
+}
+
+/* Responsive design helpers */
+@media (max-width: 768px) {
+  .mobile-hidden {
+    display: none;
+  }
+  
+  .mobile-full {
+    width: 100%;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-gray-900 {
+    background-color: #111827;
+  }
+  
+  .dark\:text-white {
+    color: #ffffff;
+  }
+  
+  .dark\:border-gray-700 {
+    border-color: #374151;
+  }
+}
+
+/* Compact Toast Notifications */
+.Toastify__toast-container {
+  width: auto;
+  min-width: 280px;
+  max-width: 400px;
+}
+
+.Toastify__toast {
+  padding: 8px 12px !important;
+  margin-bottom: 4px !important;
+  border-radius: 8px !important;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  min-height: auto !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.Toastify__toast-body {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif !important;
+  font-weight: 500 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.Toastify__toast-icon {
+  width: 16px !important;
+  height: 16px !important;
+  margin-right: 8px !important;
+  margin-left: 0 !important;
+  flex-shrink: 0 !important;
+}
+
+.Toastify__toast-icon svg {
+  width: 16px !important;
+  height: 16px !important;
+  fill: currentColor !important;
+}
+
+.Toastify__close-button {
+  width: 16px !important;
+  height: 16px !important;
+  opacity: 0.6 !important;
+  align-self: flex-start !important;
+  margin-top: 2px !important;
+  margin-left: 8px !important;
+}
+
+.Toastify__close-button:hover {
+  opacity: 1 !important;
+}
+
+.Toastify__progress-bar {
+  height: 2px !important;
+}
+
+/* Success toast */
+.Toastify__toast--success {
+  background: #10b981 !important;
+  color: white !important;
+}
+
+.Toastify__toast--success .Toastify__progress-bar {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.Toastify__toast--success .Toastify__toast-icon {
+  color: white !important;
+}
+
+/* Error toast */
+.Toastify__toast--error {
+  background: #ef4444 !important;
+  color: white !important;
+}
+
+.Toastify__toast--error .Toastify__progress-bar {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.Toastify__toast--error .Toastify__toast-icon {
+  color: white !important;
+}
+
+/* Info toast */
+.Toastify__toast--info {
+  background: #3b82f6 !important;
+  color: white !important;
+}
+
+.Toastify__toast--info .Toastify__progress-bar {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.Toastify__toast--info .Toastify__toast-icon {
+  color: white !important;
+}
+
+/* Warning toast */
+.Toastify__toast--warning {
+  background: #f59e0b !important;
+  color: white !important;
+}
+
+.Toastify__toast--warning .Toastify__progress-bar {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.Toastify__toast--warning .Toastify__toast-icon {
+  color: white !important;
 } 

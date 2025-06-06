@@ -51,6 +51,7 @@ export default function ConsoleSettings() {
   const [planHovered, setPlanHovered] = useState<string | null>(null)
   const [savingState, setSavingState] = useState<string | null>(null)
   const [lastUpdated, setLastUpdated] = useState(new Date())
+  const [isFirstVisit, setIsFirstVisit] = useState(true)
   
   // Toast notification state
   const [toastNotification, setToastNotification] = useState<{
@@ -192,6 +193,11 @@ export default function ConsoleSettings() {
     }
     
     setLoading(false)
+    
+    // Set first visit to false after initial load
+    setTimeout(() => {
+      setIsFirstVisit(false)
+    }, 2000) // Wait for animations to complete
   }, [router, searchParams])
 
   const tabs = useMemo(() => [
@@ -475,6 +481,7 @@ export default function ConsoleSettings() {
           setShowNewWebhookModal={setShowNewWebhookModal}
           toastNotification={toastNotification}
           setToastNotification={setToastNotification}
+          isFirstVisit={isFirstVisit}
         />
         <ConsoleFooter />
       </div>
@@ -483,7 +490,7 @@ export default function ConsoleSettings() {
 }
 
 // Separate component to use the sidebar context
-function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfile, plan, notifications, setNotifications, privacy, setPrivacy, apiSettings, setApiSettings, handleSave, saved, tabs, plans, showDeleteModal, setShowDeleteModal, handleDeleteAccount, showPhotoOptions, setShowPhotoOptions, photoUrl, setPhotoUrl, usernameError, usernameValid, showUsernameTooltip, isEditingUsername, handleUsernameChange, handleUsernameFocus, handleUsernameBlur, handleFileUpload, handlePhotoUrl, removePhoto, liveStats, isRefreshing, handleRefresh, hoveredTab, setHoveredTab, showPassword, setShowPassword, sessionDropdownOpen, setSessionDropdownOpen, retentionDropdownOpen, setRetentionDropdownOpen, sessionTimeoutOptions, dataRetentionOptions, planHovered, setPlanHovered, savingState, lastUpdated, showApiKey, setShowApiKey, newKeyName, setNewKeyName, showNewKeyModal, setShowNewKeyModal, newWebhookUrl, setNewWebhookUrl, showNewWebhookModal, setShowNewWebhookModal, toastNotification, setToastNotification }: any) {
+function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfile, plan, notifications, setNotifications, privacy, setPrivacy, apiSettings, setApiSettings, handleSave, saved, tabs, plans, showDeleteModal, setShowDeleteModal, handleDeleteAccount, showPhotoOptions, setShowPhotoOptions, photoUrl, setPhotoUrl, usernameError, usernameValid, showUsernameTooltip, isEditingUsername, handleUsernameChange, handleUsernameFocus, handleUsernameBlur, handleFileUpload, handlePhotoUrl, removePhoto, liveStats, isRefreshing, handleRefresh, hoveredTab, setHoveredTab, showPassword, setShowPassword, sessionDropdownOpen, setSessionDropdownOpen, retentionDropdownOpen, setRetentionDropdownOpen, sessionTimeoutOptions, dataRetentionOptions, planHovered, setPlanHovered, savingState, lastUpdated, showApiKey, setShowApiKey, newKeyName, setNewKeyName, showNewKeyModal, setShowNewKeyModal, newWebhookUrl, setNewWebhookUrl, showNewWebhookModal, setShowNewWebhookModal, toastNotification, setToastNotification, isFirstVisit }: any) {
   const mainContentClass = useMainContentClass()
   
   return (
@@ -582,13 +589,13 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                       }`}
                       whileHover={{ scale: 1.02, x: 4 }}
                       whileTap={{ scale: 0.98 }}
-                      initial={{ opacity: 0, x: -20 }}
+                      initial={isFirstVisit ? { opacity: 0, x: -20 } : { opacity: 1, x: 0 }}
                       animate={{ opacity: 1, x: 0 }}
-                      transition={{ 
+                      transition={isFirstVisit ? { 
                         delay: index * 0.1,
                         duration: 0.3,
                         ease: "easeOut"
-                      }}
+                      } : { duration: 0 }}
                       layout={false}
                     >
                       {/* Background gradient for hover */}
@@ -640,9 +647,9 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
               {/* Quick Stats */}
               <motion.div 
                 className="mt-6 p-3 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg"
-                initial={{ opacity: 0, y: 20 }}
+                initial={isFirstVisit ? { opacity: 0, y: 20 } : { opacity: 1, y: 0 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
+                transition={isFirstVisit ? { delay: 0.5 } : { duration: 0 }}
               >
                 <div className="text-xs font-medium text-gray-700 mb-2">Quick Stats</div>
                 <div className="space-y-1 text-xs text-gray-600">
@@ -665,9 +672,9 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
             {activeTab === 'account' && (
               <motion.div 
                 className="bg-white rounded-xl p-6 shadow-lg border border-gray-100"
-                initial={{ opacity: 0, y: 20 }}
+                initial={isFirstVisit ? { opacity: 0, y: 20 } : { opacity: 1, y: 0 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
+                transition={isFirstVisit ? { duration: 0.5 } : { duration: 0 }}
               >
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center">
@@ -1048,9 +1055,9 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
             {activeTab === 'plan' && (
               <motion.div 
                 className="space-y-6"
-                initial={{ opacity: 0, y: 20 }}
+                initial={isFirstVisit ? { opacity: 0, y: 20 } : { opacity: 1, y: 0 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
+                transition={isFirstVisit ? { duration: 0.5 } : { duration: 0 }}
               >
                 {/* Current Plan */}
                 <motion.div 
@@ -1087,9 +1094,9 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
 
                   <motion.div 
                     className="border-2 border-primary rounded-xl p-6 bg-gradient-to-br from-primary/5 to-secondary/5"
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={isFirstVisit ? { opacity: 0, y: 20 } : { opacity: 1, y: 0 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.3 }}
+                    transition={isFirstVisit ? { delay: 0.3 } : { duration: 0 }}
                   >
                     <div className="flex items-center justify-between mb-4">
                       <h3 className="text-xl font-bold font-space-grotesk text-gray-900">
@@ -1108,9 +1115,9 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                       <div className="relative w-full bg-gray-200 rounded-full h-3 overflow-hidden">
                         <motion.div 
                           className="bg-gradient-to-r from-green-500 to-emerald-500 h-3 rounded-full relative"
-                          initial={{ width: 0 }}
+                          initial={isFirstVisit ? { width: 0 } : { width: `${(plan.dataUsed / plan.dataLimit) * 100}%` }}
                           animate={{ width: `${(plan.dataUsed / plan.dataLimit) * 100}%` }}
-                          transition={{ duration: 1.5, ease: "easeOut" }}
+                          transition={isFirstVisit ? { duration: 1.5, ease: "easeOut" } : { duration: 0 }}
                         >
                           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse"></div>
                         </motion.div>
@@ -1126,9 +1133,9 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                         <motion.li 
                           key={index} 
                           className="flex items-center text-sm text-gray-600"
-                          initial={{ opacity: 0, x: -20 }}
+                          initial={isFirstVisit ? { opacity: 0, x: -20 } : { opacity: 1, x: 0 }}
                           animate={{ opacity: 1, x: 0 }}
-                          transition={{ delay: 0.6 + index * 0.1 }}
+                          transition={isFirstVisit ? { delay: 0.6 + index * 0.1 } : { duration: 0 }}
                         >
                           <Check className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
                           {feature}
@@ -1141,9 +1148,9 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                 {/* Available Plans */}
                 <motion.div 
                   className="bg-white rounded-xl p-6 shadow-lg border border-gray-100"
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={isFirstVisit ? { opacity: 0, y: 20 } : { opacity: 1, y: 0 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 }}
+                  transition={isFirstVisit ? { delay: 0.2 } : { duration: 0 }}
                 >
                   <div className="flex items-center justify-between mb-6">
                     <div>
@@ -1160,7 +1167,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                     {plans.map((planOption: any, index: number) => (
                       <motion.div
                         key={planOption.name}
-                        className={`relative border-2 rounded-xl p-6 transition-all duration-300 ${
+                        className={`relative border-2 rounded-xl p-6 transition-all duration-300 flex flex-col h-full ${
                           planOption.name === plan.name
                             ? 'border-primary bg-gradient-to-br from-primary/5 to-secondary/5 shadow-lg'
                             : 'border-gray-200 hover:border-primary/50 hover:shadow-lg bg-white'
@@ -1168,17 +1175,17 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                         onMouseEnter={() => setPlanHovered(planOption.name)}
                         onMouseLeave={() => setPlanHovered(null)}
                         whileHover={{ scale: 1.02, y: -4 }}
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={isFirstVisit ? { opacity: 0, y: 20 } : { opacity: 1, y: 0 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4 + index * 0.1 }}
+                        transition={isFirstVisit ? { delay: 0.4 + index * 0.1 } : { duration: 0 }}
                       >
                         {/* Popular Badge */}
                         {planOption.popular && (
                           <motion.div 
                             className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-full text-xs font-bold"
-                            initial={{ scale: 0 }}
+                            initial={isFirstVisit ? { scale: 0 } : { scale: 1 }}
                             animate={{ scale: 1 }}
-                            transition={{ delay: 0.7 + index * 0.1 }}
+                            transition={isFirstVisit ? { delay: 0.7 + index * 0.1 } : { duration: 0 }}
                           >
                             Most Popular
                           </motion.div>
@@ -1194,14 +1201,14 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                           <div className="text-sm text-gray-500">per month</div>
                         </div>
                         
-                        <ul className="space-y-3 mb-6">
+                        <ul className="space-y-3 mb-6 flex-grow">
                           {planOption.features.map((feature: string, featureIndex: number) => (
                             <motion.li 
                               key={featureIndex} 
                               className="flex items-center text-sm text-gray-600"
-                              initial={{ opacity: 0, x: -20 }}
+                              initial={isFirstVisit ? { opacity: 0, x: -20 } : { opacity: 1, x: 0 }}
                               animate={{ opacity: 1, x: 0 }}
-                              transition={{ delay: 0.8 + index * 0.1 + featureIndex * 0.05 }}
+                              transition={isFirstVisit ? { delay: 0.8 + index * 0.1 + featureIndex * 0.05 } : { duration: 0 }}
                             >
                               <Check className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
                               {feature}
@@ -1209,34 +1216,36 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                           ))}
                         </ul>
                         
-                        {planOption.name === plan.name ? (
-                          <motion.button 
-                            disabled
-                            className="w-full bg-gray-100 text-gray-500 px-4 py-3 rounded-xl font-medium cursor-not-allowed text-sm flex items-center justify-center"
-                            whileHover={{ scale: 1.02 }}
-                          >
-                            <Check className="h-4 w-4 mr-2" />
-                            Current Plan
-                          </motion.button>
-                        ) : planOption.tier > plan.tier ? (
-                          <motion.button 
-                            className="w-full gradient-bg text-white px-4 py-3 rounded-xl font-medium hover:opacity-90 text-sm shadow-lg hover:shadow-xl flex items-center justify-center"
-                            whileHover={{ scale: 1.02 }}
-                            whileTap={{ scale: 0.98 }}
-                          >
-                            <TrendingUp className="h-4 w-4 mr-2" />
-                            Upgrade
-                          </motion.button>
-                        ) : (
-                          <motion.button 
-                            className="w-full bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-xl font-medium text-sm shadow-lg hover:shadow-xl flex items-center justify-center"
-                            whileHover={{ scale: 1.02 }}
-                            whileTap={{ scale: 0.98 }}
-                          >
-                            <TrendingDown className="h-4 w-4 mr-2" />
-                            Downgrade
-                          </motion.button>
-                        )}
+                        <div className="mt-auto">
+                          {planOption.name === plan.name ? (
+                            <motion.button 
+                              disabled
+                              className="w-full bg-gray-100 text-gray-500 px-4 py-3 rounded-xl font-medium cursor-not-allowed text-sm flex items-center justify-center"
+                              whileHover={{ scale: 1.02 }}
+                            >
+                              <Check className="h-4 w-4 mr-2" />
+                              Current Plan
+                            </motion.button>
+                          ) : planOption.tier > plan.tier ? (
+                            <motion.button 
+                              className="w-full gradient-bg text-white px-4 py-3 rounded-xl font-medium hover:opacity-90 text-sm shadow-lg hover:shadow-xl flex items-center justify-center"
+                              whileHover={{ scale: 1.02 }}
+                              whileTap={{ scale: 0.98 }}
+                            >
+                              <TrendingUp className="h-4 w-4 mr-2" />
+                              Upgrade
+                            </motion.button>
+                          ) : (
+                            <motion.button 
+                              className="w-full bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-xl font-medium text-sm shadow-lg hover:shadow-xl flex items-center justify-center"
+                              whileHover={{ scale: 1.02 }}
+                              whileTap={{ scale: 0.98 }}
+                            >
+                              <TrendingDown className="h-4 w-4 mr-2" />
+                              Downgrade
+                            </motion.button>
+                          )}
+                        </div>
                       </motion.div>
                     ))}
                   </div>
@@ -1248,9 +1257,9 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
             {activeTab === 'api' && (
               <motion.div 
                 className="bg-white rounded-xl p-6 shadow-lg border border-gray-100"
-                initial={{ opacity: 0, y: 20 }}
+                initial={isFirstVisit ? { opacity: 0, y: 20 } : { opacity: 1, y: 0 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
+                transition={isFirstVisit ? { duration: 0.5 } : { duration: 0 }}
               >
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center">
@@ -1300,9 +1309,6 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                     {apiSettings.apiKeys.map((key: any, index: number) => (
                       <motion.div
                         key={key.id}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: index * 0.1 }}
                         className="border border-gray-200 rounded-xl p-4 hover:border-primary/30 hover:bg-gradient-to-r hover:from-primary/5 hover:to-secondary/5 transition-all duration-300"
                       >
                         <div className="flex items-center justify-between">
@@ -1432,9 +1438,6 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                     {apiSettings.webhooks.map((webhook: any, index: number) => (
                       <motion.div
                         key={webhook.id}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: index * 0.1 }}
                         className="border border-gray-200 rounded-xl p-4 hover:border-primary/30 hover:bg-gradient-to-r hover:from-primary/5 hover:to-secondary/5 transition-all duration-300"
                       >
                         <div className="flex items-center justify-between">
@@ -1654,9 +1657,9 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                 className={`bg-white rounded-xl p-6 shadow-lg border border-gray-100 ${
                   sessionDropdownOpen || retentionDropdownOpen ? 'relative z-[40]' : ''
                 }`}
-                initial={{ opacity: 0, y: 20 }}
+                initial={isFirstVisit ? { opacity: 0, y: 20 } : { opacity: 1, y: 0 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
+                transition={isFirstVisit ? { duration: 0.5 } : { duration: 0 }}
               >
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center">
@@ -1687,9 +1690,9 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
 
                 <motion.div 
                   className="space-y-6"
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={isFirstVisit ? { opacity: 0, y: 20 } : { opacity: 1, y: 0 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 }}
+                  transition={isFirstVisit ? { delay: 0.3 } : { duration: 0 }}
                 >
                   {/* Two-Factor Authentication */}
                   <motion.div 

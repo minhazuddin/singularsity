@@ -189,7 +189,7 @@ const Navigation = () => {
     },
     {
       name: 'Resources',
-      href: '/support',
+      href: '/resources',
       hasDropdown: true,
       dropdownItems: [
         {
@@ -465,7 +465,7 @@ const Navigation = () => {
                           <button className="flex-1 bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity duration-200">
                             Upgrade Plan
                           </button>
-                          <button className="flex-1 border border-primary text-primary px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition-all duration-200">
+                          <button className="flex-1 border border-primary text-primary px-4 py-2 rounded-lg text-sm font-medium hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white hover:border-transparent transition-all duration-200">
                             Buy Credits
                           </button>
                         </div>
