@@ -1,0 +1,94 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .small-circle { animation: float 3s ease-in-out infinite; }
+    .medium-circle { animation: float 4s ease-in-out infinite; }
+    .large-circle { animation: float 5s ease-in-out infinite; }
+    .data-point { animation: pulse 2s ease-in-out infinite; }
+    .connection { animation: glow 3s ease-in-out infinite; opacity: 0.7; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.8; r: 5; }
+      50% { opacity: 1; r: 6.5; }
+    }
+    @keyframes glow {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 0.8; }
+    }
+  </style>
+  
+  <!-- Background Elements -->
+  <circle cx="400" cy="300" r="250" fill="#326442" opacity="0.05"/>
+  <circle cx="400" cy="300" r="200" fill="#326442" opacity="0.05"/>
+  <circle cx="400" cy="300" r="150" fill="#326442" opacity="0.05"/>
+  
+  <!-- Data Network -->
+  <!-- Connection Lines -->
+  <g class="connections">
+    <line class="connection" x1="280" y1="200" x2="380" y2="150" stroke="#72ad38" stroke-width="2"/>
+    <line class="connection" x1="380" y1="150" x2="500" y2="170" stroke="#72ad38" stroke-width="2"/>
+    <line class="connection" x1="500" y1="170" x2="550" y2="250" stroke="#72ad38" stroke-width="2"/>
+    <line class="connection" x1="550" y1="250" x2="500" y2="350" stroke="#72ad38" stroke-width="2"/>
+    <line class="connection" x1="500" y1="350" x2="380" y2="400" stroke="#72ad38" stroke-width="2"/>
+    <line class="connection" x1="380" y1="400" x2="280" y2="350" stroke="#72ad38" stroke-width="2"/>
+    <line class="connection" x1="280" y1="350" x2="230" y2="250" stroke="#72ad38" stroke-width="2"/>
+    <line class="connection" x1="230" y1="250" x2="280" y2="200" stroke="#72ad38" stroke-width="2"/>
+    <line class="connection" x1="280" y1="200" x2="380" y2="400" stroke="#72ad38" stroke-width="2"/>
+    <line class="connection" x1="380" y1="150" x2="380" y2="400" stroke="#72ad38" stroke-width="2"/>
+    <line class="connection" x1="380" y1="150" x2="230" y2="250" stroke="#72ad38" stroke-width="2"/>
+    <line class="connection" x1="500" y1="170" x2="280" y2="350" stroke="#72ad38" stroke-width="2"/>
+    <line class="connection" x1="550" y1="250" x2="280" y2="200" stroke="#72ad38" stroke-width="2"/>
+    <line class="connection" x1="500" y1="350" x2="230" y2="250" stroke="#72ad38" stroke-width="2"/>
+  </g>
+  
+  <!-- Main Data Points -->
+  <g class="data-points">
+    <circle class="data-point" cx="280" cy="200" r="6" fill="#3f6e29"/>
+    <circle class="data-point" cx="380" cy="150" r="6" fill="#3f6e29"/>
+    <circle class="data-point" cx="500" cy="170" r="6" fill="#3f6e29"/>
+    <circle class="data-point" cx="550" cy="250" r="6" fill="#3f6e29"/>
+    <circle class="data-point" cx="500" cy="350" r="6" fill="#3f6e29"/>
+    <circle class="data-point" cx="380" cy="400" r="6" fill="#3f6e29"/>
+    <circle class="data-point" cx="280" cy="350" r="6" fill="#3f6e29"/>
+    <circle class="data-point" cx="230" cy="250" r="6" fill="#3f6e29"/>
+  </g>
+  
+  <!-- Floating Elements -->
+  <circle class="small-circle" cx="600" cy="150" r="15" fill="#72ad38" opacity="0.7"/>
+  <circle class="medium-circle" cx="650" cy="300" r="25" fill="#3f6e29" opacity="0.6"/>
+  <circle class="large-circle" cx="550" cy="420" r="35" fill="#326442" opacity="0.5"/>
+  <circle class="small-circle" cx="200" cy="150" r="12" fill="#72ad38" opacity="0.7"/>
+  <circle class="medium-circle" cx="150" cy="350" r="20" fill="#3f6e29" opacity="0.6"/>
+  
+  <!-- Abstract Data Objects -->
+  <g class="data-objects" opacity="0.9">
+    <!-- Abstract Data Object 1 -->
+    <rect x="300" y="220" width="40" height="40" rx="5" fill="#326442" opacity="0.8"/>
+    <rect x="310" y="230" width="20" height="5" rx="2" fill="white" opacity="0.7"/>
+    <rect x="310" y="240" width="15" height="5" rx="2" fill="white" opacity="0.7"/>
+    <rect x="310" y="250" width="10" height="5" rx="2" fill="white" opacity="0.7"/>
+    
+    <!-- Abstract Data Object 2 -->
+    <circle cx="400" cy="300" r="30" fill="#3f6e29" opacity="0.8"/>
+    <line x1="385" y1="290" x2="415" y2="290" stroke="white" stroke-width="2" opacity="0.7"/>
+    <line x1="385" y1="300" x2="415" y2="300" stroke="white" stroke-width="2" opacity="0.7"/>
+    <line x1="385" y1="310" x2="405" y2="310" stroke="white" stroke-width="2" opacity="0.7"/>
+    
+    <!-- Abstract Data Object 3 -->
+    <polygon points="450,250 480,270 450,290 420,270" fill="#72ad38" opacity="0.8"/>
+    <circle cx="450" cy="270" r="10" fill="#326442"/>
+    <circle cx="450" cy="270" r="5" fill="#FFFFFF" opacity="0.7"/>
+  </g>
+  
+  <!-- Binary Data Overlay -->
+  <g opacity="0.2" class="binary-data">
+    <text x="250" y="180" font-family="Courier New" font-size="10" fill="#FFFFFF">10110101</text>
+    <text x="420" y="150" font-family="Courier New" font-size="10" fill="#FFFFFF">01001101</text>
+    <text x="520" y="210" font-family="Courier New" font-size="10" fill="#FFFFFF">11100110</text>
+    <text x="490" y="320" font-family="Courier New" font-size="10" fill="#FFFFFF">00101101</text>
+    <text x="360" y="370" font-family="Courier New" font-size="10" fill="#FFFFFF">10011010</text>
+    <text x="260" y="320" font-family="Courier New" font-size="10" fill="#FFFFFF">01110101</text>
+  </g>
+</svg> 

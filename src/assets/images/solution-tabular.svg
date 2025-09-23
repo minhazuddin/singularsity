@@ -1,0 +1,165 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .data-point { animation: pulse 3s ease-in-out infinite; }
+    .chart-line { animation: draw 4s linear forwards; }
+    @keyframes pulse {
+      0%, 100% { r: 4; opacity: 0.7; }
+      50% { r: 6; opacity: 1; }
+    }
+    @keyframes draw {
+      0% { stroke-dashoffset: 1000; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .glow {
+      filter: drop-shadow(0px 0px 3px rgba(114, 173, 56, 0.7));
+    }
+  </style>
+  
+  <!-- Background -->
+  <rect width="600" height="400" rx="20" fill="#326442" opacity="0.05"/>
+  
+  <!-- Split View: Table and Chart -->
+  <rect x="40" y="60" width="240" height="280" rx="10" fill="white" stroke="#326442" stroke-width="2"/>
+  <rect x="320" y="60" width="240" height="280" rx="10" fill="white" stroke="#326442" stroke-width="2"/>
+  
+  <!-- Table Header -->
+  <rect x="40" y="60" width="240" height="40" rx="10" fill="#326442"/>
+  <text x="150" y="85" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">Synthetic Table Data</text>
+  
+  <!-- Chart Header -->
+  <rect x="320" y="60" width="240" height="40" rx="10" fill="#326442"/>
+  <text x="440" y="85" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">Time Series Visualization</text>
+  
+  <!-- Table Structure -->
+  <!-- Column Headers -->
+  <rect x="50" y="110" width="40" height="25" rx="3" fill="#3f6e29" opacity="0.8"/>
+  <rect x="95" y="110" width="80" height="25" rx="3" fill="#3f6e29" opacity="0.8"/>
+  <rect x="180" y="110" width="90" height="25" rx="3" fill="#3f6e29" opacity="0.8"/>
+  
+  <text x="70" y="127" font-family="Arial" font-size="12" fill="white" text-anchor="middle">ID</text>
+  <text x="135" y="127" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Category</text>
+  <text x="225" y="127" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Value</text>
+  
+  <!-- Table Rows -->
+  <!-- Row 1 -->
+  <rect x="50" y="140" width="40" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  <rect x="95" y="140" width="80" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  <rect x="180" y="140" width="90" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  
+  <text x="70" y="157" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">001</text>
+  <text x="135" y="157" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">Finance</text>
+  <text x="225" y="157" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">$1,245.67</text>
+  
+  <!-- Row 2 -->
+  <rect x="50" y="170" width="40" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  <rect x="95" y="170" width="80" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  <rect x="180" y="170" width="90" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  
+  <text x="70" y="187" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">002</text>
+  <text x="135" y="187" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">Healthcare</text>
+  <text x="225" y="187" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">$2,356.89</text>
+  
+  <!-- Row 3 -->
+  <rect x="50" y="200" width="40" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  <rect x="95" y="200" width="80" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  <rect x="180" y="200" width="90" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  
+  <text x="70" y="217" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">003</text>
+  <text x="135" y="217" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">Technology</text>
+  <text x="225" y="217" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">$3,128.45</text>
+  
+  <!-- Row 4 -->
+  <rect x="50" y="230" width="40" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  <rect x="95" y="230" width="80" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  <rect x="180" y="230" width="90" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  
+  <text x="70" y="247" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">004</text>
+  <text x="135" y="247" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">Retail</text>
+  <text x="225" y="247" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">$1,897.32</text>
+  
+  <!-- Row 5 -->
+  <rect x="50" y="260" width="40" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  <rect x="95" y="260" width="80" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  <rect x="180" y="260" width="90" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  
+  <text x="70" y="277" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">005</text>
+  <text x="135" y="277" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">Energy</text>
+  <text x="225" y="277" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">$2,765.50</text>
+  
+  <!-- Row 6 -->
+  <rect x="50" y="290" width="40" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  <rect x="95" y="290" width="80" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  <rect x="180" y="290" width="90" height="25" rx="3" fill="#f8f9fa" stroke="#326442" stroke-width="1"/>
+  
+  <text x="70" y="307" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">006</text>
+  <text x="135" y="307" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">Manufacturing</text>
+  <text x="225" y="307" font-family="Arial" font-size="12" fill="#333333" text-anchor="middle">$2,145.78</text>
+  
+  <!-- Time Series Chart -->
+  <!-- Axes -->
+  <line x1="340" y1="290" x2="540" y2="290" stroke="#326442" stroke-width="2"/>
+  <line x1="340" y1="290" x2="340" y2="120" stroke="#326442" stroke-width="2"/>
+  
+  <!-- Axes Labels -->
+  <text x="440" y="310" font-family="Arial" font-size="10" fill="#326442" text-anchor="middle">Time</text>
+  <text x="330" y="200" font-family="Arial" font-size="10" fill="#326442" text-anchor="middle" transform="rotate(-90, 330, 200)">Value</text>
+  
+  <!-- Y-Axis Ticks -->
+  <line x1="335" y1="120" x2="340" y2="120" stroke="#326442" stroke-width="1"/>
+  <text x="330" y="125" font-family="Arial" font-size="8" fill="#326442" text-anchor="end">3000</text>
+  
+  <line x1="335" y1="170" x2="340" y2="170" stroke="#326442" stroke-width="1"/>
+  <text x="330" y="175" font-family="Arial" font-size="8" fill="#326442" text-anchor="end">2000</text>
+  
+  <line x1="335" y1="220" x2="340" y2="220" stroke="#326442" stroke-width="1"/>
+  <text x="330" y="225" font-family="Arial" font-size="8" fill="#326442" text-anchor="end">1000</text>
+  
+  <line x1="335" y1="270" x2="340" y2="270" stroke="#326442" stroke-width="1"/>
+  <text x="330" y="275" font-family="Arial" font-size="8" fill="#326442" text-anchor="end">0</text>
+  
+  <!-- X-Axis Ticks -->
+  <line x1="370" y1="290" x2="370" y2="295" stroke="#326442" stroke-width="1"/>
+  <text x="370" y="305" font-family="Arial" font-size="8" fill="#326442" text-anchor="middle">Q1</text>
+  
+  <line x1="420" y1="290" x2="420" y2="295" stroke="#326442" stroke-width="1"/>
+  <text x="420" y="305" font-family="Arial" font-size="8" fill="#326442" text-anchor="middle">Q2</text>
+  
+  <line x1="470" y1="290" x2="470" y2="295" stroke="#326442" stroke-width="1"/>
+  <text x="470" y="305" font-family="Arial" font-size="8" fill="#326442" text-anchor="middle">Q3</text>
+  
+  <line x1="520" y1="290" x2="520" y2="295" stroke="#326442" stroke-width="1"/>
+  <text x="520" y="305" font-family="Arial" font-size="8" fill="#326442" text-anchor="middle">Q4</text>
+  
+  <!-- Chart Data - Primary Line -->
+  <path d="M 340 240 L 370 190 L 420 230 L 470 150 L 520 180" stroke="#326442" stroke-width="3" fill="none" class="chart-line" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+  
+  <!-- Chart Data - Secondary Line -->
+  <path d="M 340 260 L 370 240 L 420 210 L 470 220 L 520 160" stroke="#72ad38" stroke-width="3" fill="none" class="chart-line" stroke-linecap="round" stroke-linejoin="round" stroke-dashoffset="1000" stroke-dasharray="5,5"/>
+  
+  <!-- Data Points -->
+  <circle class="data-point glow" cx="340" cy="240" r="5" fill="#326442"/>
+  <circle class="data-point glow" cx="370" cy="190" r="5" fill="#326442"/>
+  <circle class="data-point glow" cx="420" cy="230" r="5" fill="#326442"/>
+  <circle class="data-point glow" cx="470" cy="150" r="5" fill="#326442"/>
+  <circle class="data-point glow" cx="520" cy="180" r="5" fill="#326442"/>
+  
+  <circle class="data-point" cx="340" cy="260" r="5" fill="#72ad38"/>
+  <circle class="data-point" cx="370" cy="240" r="5" fill="#72ad38"/>
+  <circle class="data-point" cx="420" cy="210" r="5" fill="#72ad38"/>
+  <circle class="data-point" cx="470" cy="220" r="5" fill="#72ad38"/>
+  <circle class="data-point" cx="520" cy="160" r="5" fill="#72ad38"/>
+  
+  <!-- Legend -->
+  <rect x="390" y="330" width="120" height="40" rx="5" fill="white" stroke="#326442" stroke-width="1"/>
+  
+  <circle cx="410" cy="345" r="5" fill="#326442"/>
+  <text x="425" y="348" font-family="Arial" font-size="10" fill="#333333">Real Data</text>
+  
+  <circle cx="410" cy="365" r="5" fill="#72ad38"/>
+  <text x="425" y="368" font-family="Arial" font-size="10" fill="#333333">Synthetic Data</text>
+  
+  <!-- Statistics Overlay -->
+  <rect x="320" y="100" width="70" height="15" rx="3" fill="#326442" opacity="0.8"/>
+  <text x="335" y="110" font-family="Arial" font-size="8" fill="white">CORRELATION</text>
+  <text x="375" y="110" font-family="Arial" font-size="8" fill="white">0.97</text>
+</svg> 

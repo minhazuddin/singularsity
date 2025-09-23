@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Generator</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 1px solid #ddd;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #238c44;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .instructions {
+            max-width: 500px;
+            margin: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Singularsity Favicon Generator</h1>
+    <div class="instructions">
+        <p>This page generates a favicon for the Singularsity website. The favicon features the letter "S" with the brand's primary green color.</p>
+        <p>Click "Download Favicon" to download the .ico file, then place it in your website's root directory.</p>
+    </div>
+    <canvas id="favicon" width="64" height="64"></canvas>
+    <button id="download">Download Favicon</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const canvas = document.getElementById('favicon');
+            const ctx = canvas.getContext('2d');
+            
+            // Draw background
+            ctx.fillStyle = '#238c44';
+            ctx.beginPath();
+            ctx.arc(32, 32, 32, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Draw S shape
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 42px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('S', 32, 34);
+            
+            // Download button
+            document.getElementById('download').addEventListener('click', function() {
+                // Convert canvas to blob
+                canvas.toBlob(function(blob) {
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.download = 'favicon.ico';
+                    a.href = url;
+                    a.click();
+                    URL.revokeObjectURL(url);
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
