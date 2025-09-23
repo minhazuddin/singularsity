@@ -47,7 +47,7 @@ export default function Terms() {
       </section>
 
       {/* Key Points */}
-      <section className="py-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
+      <section className="py-16 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <motion.div 
@@ -105,7 +105,7 @@ export default function Terms() {
       </section>
 
       {/* Terms Content */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             

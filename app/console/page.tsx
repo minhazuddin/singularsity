@@ -314,7 +314,7 @@ function ConsoleMainContent({ user }: { user: User }) {
       </div>
 
       {/* Quick Stats */}
-      <section className="p-6">
+      <section className="p-6 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {quickStats.map((stat, index) => {
             const IconComponent = stat.icon
@@ -384,7 +384,7 @@ function ConsoleMainContent({ user }: { user: User }) {
       </section>
 
       {/* Usage Progress */}
-      <section className="px-6 pb-6">
+      <section className="px-6 pb-6 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <motion.div
           className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 group"
         >
@@ -480,7 +480,7 @@ function ConsoleMainContent({ user }: { user: User }) {
       </section>
 
       {/* Recent Projects */}
-      <section className="px-6 pb-6">
+      <section className="px-6 pb-6 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <motion.div
           className="bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300"
         >
@@ -591,7 +591,7 @@ function ConsoleMainContent({ user }: { user: User }) {
       </section>
 
       {/* Quick Actions */}
-      <section className="px-6 pb-6">
+      <section className="px-6 pb-6 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <motion.div
         >
           <div className="mb-4">

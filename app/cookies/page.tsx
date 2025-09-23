@@ -86,7 +86,7 @@ export default function Cookies() {
       </section>
 
       {/* Cookie Settings */}
-      <section className="py-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
+      <section className="py-16 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             
@@ -176,7 +176,7 @@ export default function Cookies() {
       </section>
 
       {/* Policy Content */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             

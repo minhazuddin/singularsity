@@ -145,7 +145,7 @@ export default function Demo() {
       </section>
 
       {/* Interactive Demo Features */}
-      <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
+      <section className="py-24 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
@@ -193,7 +193,7 @@ export default function Demo() {
       </section>
 
       {/* Demo Dashboard Preview */}
-      <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
+      <section className="py-24 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
@@ -291,7 +291,7 @@ export default function Demo() {
       </section>
 
       {/* Use Case Examples */}
-      <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
+      <section className="py-24 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
@@ -344,7 +344,7 @@ export default function Demo() {
       </section>
 
       {/* Getting Started */}
-      <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
+      <section className="py-24 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">

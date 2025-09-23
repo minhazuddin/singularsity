@@ -371,7 +371,7 @@ function AnalyticsMainContent({
         </motion.div>
 
         {/* Quality Metrics Overview */}
-        <section className="mb-6">
+        <section className="mb-6 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
           <h2 className="text-lg font-bold font-space-grotesk text-gray-900 mb-4">
             Quality Metrics Overview
           </h2>
@@ -412,7 +412,7 @@ function AnalyticsMainContent({
         </section>
 
         {/* Bias Analysis */}
-        <section className="mb-6">
+        <section className="mb-6 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
           <h2 className="text-lg font-bold font-space-grotesk text-gray-900 mb-4">
             Bias Analysis Dashboard
           </h2>
@@ -459,7 +459,7 @@ function AnalyticsMainContent({
         </section>
 
         {/* Data Distribution */}
-        <section className="mb-6">
+        <section className="mb-6 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
           <h2 className="text-lg font-bold font-space-grotesk text-gray-900 mb-4">
             Data Distribution Analysis
           </h2>
@@ -529,7 +529,7 @@ function AnalyticsMainContent({
         </section>
 
         {/* Privacy & Security */}
-        <section className="mb-6">
+        <section className="mb-6 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
           <h2 className="text-lg font-bold font-space-grotesk text-gray-900 mb-4">
             Privacy & Security Metrics
           </h2>

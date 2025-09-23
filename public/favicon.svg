@@ -1,4 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="64" height="64">
-  <circle cx="50" cy="50" r="50" fill="#238c44"/>
-  <text x="50" y="70" font-family="Arial, sans-serif" font-size="60" font-weight="bold" text-anchor="middle" fill="white">S</text>
-</svg> 
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.92 124">
+<g clip-path="url(#clip0_6_16)">
+<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M40.53 1.11271e-05L124.89 0.0600111L84.94 81H40.47C29.7287 80.9921 19.4306 76.7175 11.841 69.1166C4.25138 61.5158 -0.00794537 51.2113 1.11271e-05 40.47C0.00796762 29.7287 4.28255 19.4306 11.8834 11.841C19.4842 4.25138 29.7887 -0.00794537 40.53 1.11271e-05Z" fill="#10B981"/>
+<path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M87.31 124H2.94L42.94 43H87.4C98.1413 43 108.443 47.267 116.038 54.8622C123.633 62.4574 127.9 72.7587 127.9 83.5C127.9 94.2413 123.633 104.543 116.038 112.138C108.443 119.733 98.1413 124 87.4 124H87.31Z" fill="#10B981"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M87.36 43C92.4684 43.0024 97.5304 43.9694 102.28 45.85L84.94 81H40.47C35.3608 81.0063 30.2972 80.039 25.55 78.15L42.9 43H87.36Z" fill="#0DA371"/>
+</g>
+<defs>
+<clipPath id="clip0_6_16">
+<rect width="127.9" height="124" fill="white"/>
+</clipPath>
+</defs>
+</svg>

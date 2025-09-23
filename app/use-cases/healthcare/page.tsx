@@ -86,7 +86,7 @@ export default function Healthcare() {
       
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20 overflow-hidden">
-        {/* Background Elements */}
+                {/* Background Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <motion.div
             className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-purple-500/10 rounded-full blur-2xl"
@@ -101,16 +101,35 @@ export default function Healthcare() {
             }}
           />
           <motion.div
-            className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-emerald-400/15 to-teal-500/8 rounded-full blur-2xl"
+            className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-emerald-400/30 to-teal-500/25 rounded-full blur-2xl"
             animate={{
-              scale: [1.2, 1, 1.2],
-              rotate: [360, 180, 0],
+              scale: [1, 1.4, 0.8, 1.2, 1],
+              rotate: [0, 90, 180, 270, 360],
+              opacity: [0.6, 0.9, 0.4, 0.8, 0.6],
+              x: [0, -600, 800, -400, 600, -200, 0],
+              y: [0, -25, 15, -10, 8, -3, 0],
             }}
             transition={{
-              duration: 25,
+              duration: 24,
               repeat: Infinity,
-              ease: "linear",
-              delay: 5
+              ease: "easeInOut",
+              delay: 2
+            }}
+          />
+          <motion.div
+            className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-purple-500/10 rounded-full blur-2xl"
+            animate={{
+              scale: [1, 0.7, 1.3, 0.9, 1.1, 1],
+              rotate: [0, 120, 240, 360],
+              opacity: [0.8, 0.4, 1, 0.6, 0.9, 0.8],
+              x: [0, 800, -600, 600, -400, 300, 0],
+              y: [0, 30, -40, 20, -10, 5, 0],
+            }}
+            transition={{
+              duration: 28,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 1
             }}
           />
         </div>
@@ -175,7 +194,7 @@ export default function Healthcare() {
       </section>
 
       {/* Industry Challenges Section */}
-      <section className="pt-8 pb-16 bg-white">
+      <section className="pt-8 pb-16 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
@@ -215,7 +234,7 @@ export default function Healthcare() {
       </section>
 
       {/* Solutions Section */}
-      <section className="pt-8 pb-16 bg-gray-50">
+      <section className="pt-8 pb-16 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
@@ -261,7 +280,7 @@ export default function Healthcare() {
       </section>
 
       {/* Real-World Impact Section */}
-      <section className="pt-8 pb-16 bg-white">
+      <section className="pt-8 pb-16 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
@@ -330,7 +349,7 @@ export default function Healthcare() {
       </section>
 
       {/* Compliance Framework Section */}
-      <section className="pt-8 pb-16 bg-gray-50">
+      <section className="pt-8 pb-16 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
@@ -376,7 +395,7 @@ export default function Healthcare() {
       </section>
 
       {/* Case Study Section */}
-      <section className="pt-8 pb-16 bg-white">
+      <section className="pt-8 pb-16 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             
