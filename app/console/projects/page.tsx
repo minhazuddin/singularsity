@@ -507,7 +507,7 @@ function ProjectsMainContent({
                 
                 
                 
-                className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-200"
+                className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-200 flex flex-col h-full"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex-1">
@@ -526,7 +526,7 @@ function ProjectsMainContent({
                   </div>
                 </div>
 
-                <div className="space-y-3">
+                <div className="space-y-3 flex-grow">
                   <div className="flex justify-between text-sm">
                     <span className="text-gray-600">Records:</span>
                     <span className="font-medium">{project.records.toLocaleString()}</span>
@@ -580,18 +580,51 @@ function ProjectsMainContent({
                       <button className="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors duration-200">
                         <Eye className="h-4 w-4" />
                       </button>
+                      <button className="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors duration-200">
+                        <Trash2 className="h-4 w-4 text-red-600" />
+                      </button>
+                    </>
+                  )}
+                  
+                  {project.status === 'Processing' && (
+                    <>
+                      <button 
+                        disabled
+                        className="flex-1 bg-gray-300 text-gray-500 px-3 py-2 rounded-lg text-sm font-medium cursor-not-allowed transition-colors duration-200 flex items-center justify-center opacity-60"
+                      >
+                        <Download className="h-4 w-4 mr-1" />
+                        Download
+                      </button>
+                      <button className="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors duration-200">
+                        <Eye className="h-4 w-4" />
+                      </button>
+                      <button className="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors duration-200">
+                        <Trash2 className="h-4 w-4 text-red-600" />
+                      </button>
                     </>
                   )}
                   
                   {project.status === 'Failed' && (
-                    <button className="flex-1 bg-red-600 text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-red-700 transition-colors duration-200">
-                      Retry
-                    </button>
+                    <>
+                      <button className="flex-1 bg-red-600 text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-red-700 transition-colors duration-200">
+                        Retry
+                      </button>
+                      <button className="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors duration-200">
+                        <Trash2 className="h-4 w-4 text-red-600" />
+                      </button>
+                    </>
                   )}
                   
-                  <button className="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors duration-200">
-                    <Trash2 className="h-4 w-4 text-red-600" />
-                  </button>
+                  {project.status === 'Queued' && (
+                    <>
+                      <button className="flex-1 bg-gray-600 text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-700 transition-colors duration-200">
+                        Cancel
+                      </button>
+                      <button className="px-3 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors duration-200">
+                        <Trash2 className="h-4 w-4 text-red-600" />
+                      </button>
+                    </>
+                  )}
                 </div>
               </motion.div>
             ))}

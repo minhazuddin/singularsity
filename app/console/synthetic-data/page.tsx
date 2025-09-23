@@ -122,7 +122,7 @@ function MainContent() {
                 <Sparkles className="h-8 w-8 text-white" />
               </div>
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold text-gray-900 mb-4">
               Generate Synthetic Data with AI
             </h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">

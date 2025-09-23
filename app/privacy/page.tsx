@@ -7,27 +7,29 @@ import Footer from '../../components/Footer'
 
 export default function Privacy() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-white">
+      <section className="relative pt-24 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20 overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <motion.h1 
-              
-              
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-4xl md:text-6xl font-bold font-space-grotesk text-gray-900 mb-6"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-space-grotesk leading-tight mb-4"
             >
-              Privacy <span className="text-gradient">Policy</span>
+              <span className="text-gray-900">Privacy</span>
+              <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-emerald-600">Policy</span>
             </motion.h1>
-            
-            <motion.p 
-              
-              
-              
-              className="text-xl text-gray-600 font-segoe mb-8"
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              className="text-lg text-gray-600 font-light leading-relaxed max-w-3xl mx-auto mb-6"
             >
               Your privacy is our priority. Learn how we collect, use, and protect your information.
             </motion.p>
@@ -45,7 +47,7 @@ export default function Privacy() {
       </section>
 
       {/* Privacy Principles */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <motion.div 

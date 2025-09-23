@@ -202,7 +202,7 @@ export default function ConsoleSettings() {
 
   const tabs = useMemo(() => [
     { id: 'account', name: 'Account', icon: User, description: 'Profile and personal information' },
-    { id: 'plan', name: 'Plan & Billing', icon: CreditCard, description: 'Subscription and usage details' },
+    { id: 'plan', name: 'Plan & Billing', icon: CreditCard, description: 'Subscription and usage information' },
     { id: 'api', name: 'API Settings', icon: Key, description: 'API keys and integration settings' },
     { id: 'notifications', name: 'Notifications', icon: Bell, description: 'Email and alert preferences' },
     { id: 'security', name: 'Security', icon: Shield, description: 'Privacy and security settings' }

@@ -57,7 +57,7 @@ export default function NotFound() {
                     4🤖4
                   </div>
                   <motion.div
-                    className="absolute -top-4 -right-4 text-4xl"
+                    className="text-[2rem]"
                     animate={{ rotate: [0, 10, -10, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
                   >
@@ -67,7 +67,7 @@ export default function NotFound() {
                 
                 {/* Friendly animated message */}
                 <motion.h1 
-                  className="text-4xl font-bold font-space-grotesk text-gray-800 mb-6"
+                  className="text-[2rem] font-bold font-space-grotesk text-gray-800 mb-6"
                   animate={{ scale: [1, 1.02, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >

@@ -1,34 +1,65 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Clock, Send, MessageSquare, Users, Building, ArrowRight } from 'lucide-react'
+import { Mail, Phone, MapPin, Clock, Send, MessageSquare, Users, Building, ArrowRight, CheckCircle } from 'lucide-react'
 import Navigation from '../../components/Navigation'
 import Footer from '../../components/Footer'
 import Link from 'next/link'
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-green-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative pt-24 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20 overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <motion.div
+            className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-purple-500/10 rounded-full blur-2xl"
+            animate={{
+              scale: [1, 1.2, 1],
+              rotate: [0, 180, 360],
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              ease: "linear"
+            }}
+          />
+          <motion.div
+            className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-emerald-400/15 to-teal-500/8 rounded-full blur-2xl"
+            animate={{
+              scale: [1.2, 1, 1.2],
+              rotate: [360, 180, 0],
+            }}
+            transition={{
+              duration: 25,
+              repeat: Infinity,
+              ease: "linear",
+              delay: 5
+            }}
+          />
+        </div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <motion.h1 
-              
-              
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-4xl md:text-6xl font-bold font-space-grotesk text-gray-900 mb-6"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-space-grotesk leading-tight mb-4"
             >
-              Get in <span className="text-gradient">Touch</span>
+              <span className="text-gray-900">Get in</span>
+              <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-emerald-600">Touch</span>
             </motion.h1>
-            
-            <motion.p 
-              
-              
-              
-              className="text-xl text-gray-600 font-segoe mb-8 max-w-3xl mx-auto"
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              className="text-lg text-gray-600 font-light leading-relaxed max-w-3xl mx-auto mb-6"
             >
               Ready to transform your data strategy with synthetic data? Our team of experts is here to help you get started.
             </motion.p>
@@ -37,15 +68,22 @@ export default function Contact() {
       </section>
 
       {/* Contact Form & Info Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-20 left-20 w-72 h-72 bg-gradient-to-r from-purple-400/20 to-blue-400/20 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-2xl"></div>
+        </div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Form */}
             <motion.div 
-              
-              
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-gray-50 rounded-2xl p-8 lg:p-12"
+              className="bg-white/80 backdrop-blur-xl rounded-3xl p-8 lg:p-12 shadow-xl border border-white/50"
             >
               <h2 className="text-3xl font-bold font-space-grotesk text-gray-900 mb-6">
                 Send us a Message
@@ -133,20 +171,23 @@ export default function Contact() {
                   ></textarea>
                 </div>
                 
-                <button
+                <motion.button
                   type="submit"
-                  className="w-full gradient-bg text-white px-8 py-4 rounded-lg font-medium hover:opacity-90 transition-opacity duration-200 flex items-center justify-center"
+                  className="w-full bg-gradient-to-r from-emerald-500 to-green-600 text-white px-8 py-4 rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
                 >
                   Send Message
                   <Send className="ml-2 h-5 w-5" />
-                </button>
+                </motion.button>
               </form>
             </motion.div>
 
             {/* Contact Information */}
             <motion.div 
-              
-              
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className="space-y-8"
             >
@@ -161,8 +202,14 @@ export default function Contact() {
 
               {/* Contact Methods */}
               <div className="space-y-6">
-                <div className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
-                  <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center">
+                <motion.div 
+                  className="flex items-start space-x-4 p-6 bg-white/80 backdrop-blur-xl rounded-2xl shadow-lg border border-white/50"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center shadow-lg">
                     <Mail className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -176,10 +223,16 @@ export default function Contact() {
                       contact@singularsity.com
                     </a>
                   </div>
-                </div>
+                </motion.div>
 
-                <div className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
-                  <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center">
+                <motion.div 
+                  className="flex items-start space-x-4 p-6 bg-white/80 backdrop-blur-xl rounded-2xl shadow-lg border border-white/50"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.1 }}
+                >
+                  <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center shadow-lg">
                     <Phone className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -193,7 +246,7 @@ export default function Contact() {
                       9892305067
                     </a>
                   </div>
-                </div>
+                </motion.div>
 
                 <div className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
                   <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center">
@@ -257,11 +310,13 @@ export default function Contact() {
       </section>
 
       {/* Office Locations */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold font-space-grotesk text-gray-900 mb-4">
-              Our Locations
+            <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
+                Our Locations
+              </span>
             </h2>
             <p className="text-xl text-gray-600 font-segoe max-w-3xl mx-auto">
               Visit us at our offices or connect with our global team
@@ -343,11 +398,13 @@ export default function Contact() {
       </section>
 
       {/* Support Team */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold font-space-grotesk text-gray-900 mb-4">
-              Talk to Our Experts
+            <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
+                Talk to Our Experts
+              </span>
             </h2>
             <p className="text-xl text-gray-600 font-segoe max-w-3xl mx-auto">
               Get specialized support from our team of synthetic data experts
@@ -373,7 +430,7 @@ export default function Contact() {
               </p>
               <a 
                 href="mailto:sales@singularsity.com" 
-                className="border-2 border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-gradient-to-r hover:from-emerald-600 hover:to-emerald-500 hover:text-white hover:border-transparent transition-all duration-200 inline-flex items-center"
+                className="border-2 border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-gradient-to-r hover:from-emerald-600 hover:to-emerald-500 hover:text-white hover:border-transparent focus:outline-none focus:ring-0 active:border-none active:outline-none active:ring-0 transition-all duration-200 inline-flex items-center"
               >
                 Contact Sales
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -398,7 +455,7 @@ export default function Contact() {
               </p>
               <a 
                 href="mailto:support@singularsity.com" 
-                className="border-2 border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-gradient-to-r hover:from-emerald-600 hover:to-emerald-500 hover:text-white hover:border-transparent transition-all duration-200 inline-flex items-center"
+                className="border-2 border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-gradient-to-r hover:from-emerald-600 hover:to-emerald-500 hover:text-white hover:border-transparent focus:outline-none focus:ring-0 active:border-none active:outline-none active:ring-0 transition-all duration-200 inline-flex items-center"
               >
                 Get Support
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -423,7 +480,7 @@ export default function Contact() {
               </p>
               <a 
                 href="mailto:partnerships@singularsity.com" 
-                className="border-2 border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-gradient-to-r hover:from-emerald-600 hover:to-emerald-500 hover:text-white hover:border-transparent transition-all duration-200 inline-flex items-center"
+                className="border-2 border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-gradient-to-r hover:from-emerald-600 hover:to-emerald-500 hover:text-white hover:border-transparent focus:outline-none focus:ring-0 active:border-none active:outline-none active:ring-0 transition-all duration-200 inline-flex items-center"
               >
                 Partner With Us
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -433,27 +490,167 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 gradient-bg text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      {/* Enhanced CTA Section */}
+      <section className="relative pt-8 pb-12 gradient-bg text-white overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Floating geometric shapes */}
           <motion.div
-            
-            
-            transition={{ duration: 0.6 }}
+            className="absolute top-10 left-10 w-16 h-16 border border-white/20 rounded-lg rotate-45"
+            animate={{
+              y: [0, -20, 0],
+              rotate: [45, 65, 45],
+            }}
+            transition={{
+              duration: 6,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
+          <motion.div
+            className="absolute top-24 right-20 w-12 h-12 border border-white/30 rounded-full"
+            animate={{
+              y: [0, 30, 0],
+              scale: [1, 1.2, 1],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 2
+            }}
+          />
+          <motion.div
+            className="absolute bottom-20 left-1/4 w-10 h-10 border border-white/25 rounded-lg"
+            animate={{
+              y: [0, -25, 0],
+              rotate: [0, 180, 360],
+            }}
+            transition={{
+              duration: 10,
+              repeat: Infinity,
+              ease: "linear",
+              delay: 1
+            }}
+          />
+
+          {/* Floating particles */}
+          {[...Array(6)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute w-2 h-2 bg-white/20 rounded-full"
+              style={{
+                left: `${20 + i * 15}%`,
+                top: `${30 + (i % 2) * 40}%`,
+              }}
+              animate={{
+                y: [0, -40, 0],
+                opacity: [0.2, 0.8, 0.2],
+              }}
+              transition={{
+                duration: 4 + i,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: i * 0.5,
+              }}
+            />
+          ))}
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold font-space-grotesk mb-6">
+            {/* Enhanced Title with Creative Elements */}
+            <div className="mb-2">
+              <motion.div
+                className="inline-flex items-center justify-center w-16 h-16 gradient-bg rounded-3xl mb-2 shadow-2xl"
+                initial={{ scale: 0, rotate: -180 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{ delay: 0.3, duration: 0.8, type: "spring", stiffness: 200 }}
+                viewport={{ once: true }}
+              >
+                <MessageSquare className="w-8 h-8 text-white" />
+              </motion.div>
+
+              <motion.h2
+                className="text-[2rem] font-bold font-space-grotesk mb-1"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <span className="text-white">
               Ready to Get Started?
-            </h2>
-            <p className="text-xl font-segoe mb-8 max-w-3xl mx-auto opacity-90">
-              Transform your data strategy with synthetic data. Schedule a personalized demo and see how we can help your organization.
-            </p>
-            <Link 
-              href="/demo" 
-              className="bg-white text-primary px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-100 transition-colors duration-200 inline-flex items-center"
+                </span>
+              </motion.h2>
+            </div>
+
+            {/* Enhanced Description */}
+            <motion.div
+              className="mb-6"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7, duration: 0.6 }}
+              viewport={{ once: true }}
             >
-              Schedule Demo
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+              <p className="text-[1.1rem] font-segoe font-light mb-4 max-w-4xl mx-auto opacity-95 leading-relaxed">
+                Transform your data strategy with synthetic data. Schedule a personalized demo and see how we can help your organization.
+              </p>
+            </motion.div>
+
+            {/* Enhanced CTA Buttons */}
+            <motion.div
+              className="flex flex-col sm:flex-row gap-3 justify-center items-center"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 1.2, duration: 0.6 }}
+            >
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+              <Link 
+                href="/demo" 
+                className="group bg-white text-primary px-6 py-3 rounded-lg text-base font-medium hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-white/20 flex items-center justify-center"
+              >
+                Schedule Demo
+                <motion.div
+                  className="ml-2"
+                  animate={{ x: [0, 4, 0] }}
+                  transition={{ duration: 1.5, repeat: Infinity }}
+                >
+                  <ArrowRight className="h-4 w-4" />
+                </motion.div>
+              </Link>
+              </motion.div>
+            </motion.div>
+
+            {/* Trust indicators */}
+            <motion.div
+              className="mt-12 flex flex-wrap justify-center items-center gap-8 text-sm text-white/70"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 1.4, duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400" />
+                <span>Instant Response</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400" />
+                <span>Expert Support</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-green-400" />
+                <span>Custom Solutions</span>
+            </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>

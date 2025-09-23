@@ -83,6 +83,13 @@ function ConsoleMainContent({ user }: { user: User }) {
   const mainContentClass = useMainContentClass()
   const [isRefreshing, setIsRefreshing] = useState(false)
   const [hoveredStat, setHoveredStat] = useState<string | null>(null)
+  const [isFirstVisit, setIsFirstVisit] = useState(() => {
+    // Check localStorage to see if user has visited dashboard before
+    if (typeof window !== 'undefined') {
+      return !localStorage.getItem('dashboardVisited')
+    }
+    return true
+  })
   const [liveStatus, setLiveStatus] = useState({
     activeGenerations: 8,
     queueLength: 12,
@@ -105,6 +112,16 @@ function ConsoleMainContent({ user }: { user: User }) {
     
     return () => clearInterval(interval)
   }, [])
+
+  // Set first visit to false after initial load and mark in localStorage
+  useEffect(() => {
+    if (isFirstVisit) {
+      setTimeout(() => {
+        setIsFirstVisit(false)
+        localStorage.setItem('dashboardVisited', 'true')
+      }, 2500) // Wait for animations to complete
+    }
+  }, [isFirstVisit])
 
   const handleRefresh = async () => {
     setIsRefreshing(true)
@@ -411,21 +428,21 @@ function ConsoleMainContent({ user }: { user: User }) {
             <div className="relative">
               <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
                 <motion.div
-                  initial={{ width: 0 }}
+                  initial={isFirstVisit ? { width: 0 } : { width: `${(user.dataGenerated / user.dataLimit) * 100}%` }}
                   animate={{ width: `${(user.dataGenerated / user.dataLimit) * 100}%` }}
-                  transition={{ duration: 2, ease: "easeOut" }}
+                  transition={isFirstVisit ? { duration: 2, ease: "easeOut" } : { duration: 0 }}
                   className="bg-gradient-to-r from-green-500 via-emerald-500 to-green-600 h-4 rounded-full relative overflow-hidden"
                 >
                   {/* Animated shine effect */}
                   <motion.div
-                    initial={{ x: '-100%' }}
+                    initial={isFirstVisit ? { x: '-100%' } : { x: '100%' }}
                     animate={{ x: '100%' }}
-                    transition={{ 
+                    transition={isFirstVisit ? { 
                       duration: 2, 
                       repeat: Infinity, 
                       repeatDelay: 3,
                       ease: "easeInOut" 
-                    }}
+                    } : { duration: 0 }}
                     className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
                   />
                 </motion.div>

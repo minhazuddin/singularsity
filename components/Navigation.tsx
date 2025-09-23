@@ -100,16 +100,16 @@ const Navigation = () => {
       hasDropdown: true,
       dropdownItems: [
         {
-          name: 'Synthetic Data Generation',
-          href: '/services/data-generation',
-          description: 'Generate high-quality synthetic datasets',
-          icon: Database
-        },
-        {
           name: 'AI Model Training',
           href: '/solutions/ai-ml-training',
           description: 'Train models with privacy-preserving data',
           icon: Brain
+        },
+        {
+          name: 'Software Testing',
+          href: '/solutions/software-testing',
+          description: 'Accelerate testing with synthetic datasets',
+          icon: CheckCircle
         },
         {
           name: 'Data Privacy & Security',
@@ -131,9 +131,9 @@ const Navigation = () => {
       hasDropdown: true,
       dropdownItems: [
         {
-          name: 'Data Generation',
+          name: 'Synthetic Data Generation',
           href: '/services/data-generation',
-          description: 'Create synthetic datasets for any use case',
+          description: 'Generate high-quality synthetic datasets',
           icon: Database
         },
         {
@@ -220,7 +220,7 @@ const Navigation = () => {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-b border-gray-200/50 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/60 backdrop-blur-xl border-b border-gray-200/20 shadow-sm">
       <div className="flex justify-between items-center h-16 px-4 sm:px-6 lg:px-8">
         {/* Logo - Positioned at extreme left */}
         <div className="flex-shrink-0">
