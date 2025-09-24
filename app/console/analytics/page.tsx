@@ -240,7 +240,7 @@ function AnalyticsMainContent({
               <ArrowLeft className="h-5 w-5 text-gray-600 group-hover:text-primary transition-colors duration-200" />
             </Link>
             <div>
-              <h1 className="text-2xl font-bold font-garnett text-gray-900 flex items-center">
+              <h1 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 flex items-center">
                 Analytics & Insights
                 <motion.div
                   animate={{ scale: [1, 1.1, 1] }}
@@ -288,7 +288,7 @@ function AnalyticsMainContent({
           className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 mb-6 hover:shadow-md transition-shadow duration-300"
         >
           <div className="flex items-center justify-between mb-4">
-            <h3 className="text-lg font-semibold font-garnett text-gray-900 flex items-center">
+            <h3 className="text-lg font-semibold font-plus-jakarta-sans text-gray-900 flex items-center">
               <Activity className="h-5 w-5 text-primary mr-2" />
               Analytics Filters
             </h3>
@@ -372,7 +372,7 @@ function AnalyticsMainContent({
 
         {/* Quality Metrics Overview */}
         <section className="mb-6 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
-          <h2 className="text-lg font-bold font-garnett text-gray-900 mb-4">
+          <h2 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-4">
             Quality Metrics Overview
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -391,7 +391,7 @@ function AnalyticsMainContent({
                   {getTrendIcon(metric.trend)}
                 </div>
                 <div className="flex items-baseline">
-                  <span className="text-2xl font-bold text-gray-900 font-garnett">
+                  <span className="text-2xl font-bold text-gray-900 font-plus-jakarta-sans">
                     {metric.value}
                   </span>
                   <span className="text-sm text-gray-600 ml-1">
@@ -413,7 +413,7 @@ function AnalyticsMainContent({
 
         {/* Bias Analysis */}
         <section className="mb-6 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
-          <h2 className="text-lg font-bold font-garnett text-gray-900 mb-4">
+          <h2 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-4">
             Bias Analysis Dashboard
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -426,7 +426,7 @@ function AnalyticsMainContent({
                 className="bg-white rounded-lg p-4 shadow-sm border border-gray-100"
               >
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="font-semibold text-gray-900 font-garnett text-sm">
+                  <h3 className="font-semibold text-gray-900 font-plus-jakarta-sans text-sm">
                     {metric.name}
                   </h3>
                   <span className={`px-2 py-1 text-xs font-medium rounded-full ${getBiasStatusColor(metric.status)}`}>
@@ -460,12 +460,12 @@ function AnalyticsMainContent({
 
         {/* Data Distribution */}
         <section className="mb-6 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
-          <h2 className="text-lg font-bold font-garnett text-gray-900 mb-4">
+          <h2 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-4">
             Data Distribution Analysis
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
-              <h3 className="font-semibold text-gray-900 font-garnett mb-4 text-sm">
+              <h3 className="font-semibold text-gray-900 font-plus-jakarta-sans mb-4 text-sm">
                 Gender Distribution
               </h3>
               <div className="space-y-3">
@@ -488,7 +488,7 @@ function AnalyticsMainContent({
             </div>
             
             <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
-              <h3 className="font-semibold text-gray-900 font-garnett mb-4 text-sm">
+              <h3 className="font-semibold text-gray-900 font-plus-jakarta-sans mb-4 text-sm">
                 Age Demographics
               </h3>
               <div className="space-y-3">
@@ -530,18 +530,18 @@ function AnalyticsMainContent({
 
         {/* Privacy & Security */}
         <section className="mb-6 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
-          <h2 className="text-lg font-bold font-garnett text-gray-900 mb-4">
+          <h2 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-4">
             Privacy & Security Metrics
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
               <div className="flex items-center mb-3">
                 <Shield className="h-5 w-5 text-green-600 mr-2" />
-                <h3 className="font-semibold text-gray-900 font-garnett text-sm">
+                <h3 className="font-semibold text-gray-900 font-plus-jakarta-sans text-sm">
                   Data Leakage
                 </h3>
               </div>
-              <div className="text-2xl font-bold text-green-600 font-garnett">
+              <div className="text-2xl font-bold text-green-600 font-plus-jakarta-sans">
                 0%
               </div>
               <p className="text-xs text-gray-600 font-segoe mt-1">
@@ -552,11 +552,11 @@ function AnalyticsMainContent({
             <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
               <div className="flex items-center mb-3">
                 <BarChart className="h-5 w-5 text-blue-600 mr-2" />
-                <h3 className="font-semibold text-gray-900 font-garnett text-sm">
+                <h3 className="font-semibold text-gray-900 font-plus-jakarta-sans text-sm">
                   Statistical Accuracy
                 </h3>
               </div>
-              <div className="text-2xl font-bold text-blue-600 font-garnett">
+              <div className="text-2xl font-bold text-blue-600 font-plus-jakarta-sans">
                 98.5%
               </div>
               <p className="text-xs text-gray-600 font-segoe mt-1">
@@ -567,11 +567,11 @@ function AnalyticsMainContent({
             <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
               <div className="flex items-center mb-3">
                 <Eye className="h-5 w-5 text-purple-600 mr-2" />
-                <h3 className="font-semibold text-gray-900 font-garnett text-sm">
+                <h3 className="font-semibold text-gray-900 font-plus-jakarta-sans text-sm">
                   Anonymization Score
                 </h3>
               </div>
-              <div className="text-2xl font-bold text-purple-600 font-garnett">
+              <div className="text-2xl font-bold text-purple-600 font-plus-jakarta-sans">
                 100%
               </div>
               <p className="text-xs text-gray-600 font-segoe mt-1">
@@ -583,7 +583,7 @@ function AnalyticsMainContent({
 
         {/* Recommendations */}
         <section>
-          <h2 className="text-lg font-bold font-garnett text-gray-900 mb-4">
+          <h2 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-4">
             Recommendations
           </h2>
           <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
@@ -591,7 +591,7 @@ function AnalyticsMainContent({
               <div className="flex items-start">
                 <AlertTriangle className="h-5 w-5 text-yellow-600 mr-3 mt-0.5" />
                 <div>
-                  <h3 className="font-semibold text-gray-900 font-garnett text-sm">
+                  <h3 className="font-semibold text-gray-900 font-plus-jakarta-sans text-sm">
                     Improve Demographic Parity
                   </h3>
                   <p className="text-sm text-gray-600 font-segoe mt-1">
@@ -603,7 +603,7 @@ function AnalyticsMainContent({
               <div className="flex items-start">
                 <TrendingUp className="h-5 w-5 text-green-600 mr-3 mt-0.5" />
                 <div>
-                  <h3 className="font-semibold text-gray-900 font-garnett text-sm">
+                  <h3 className="font-semibold text-gray-900 font-plus-jakarta-sans text-sm">
                     Optimize Data Utility
                   </h3>
                   <p className="text-sm text-gray-600 font-segoe mt-1">

@@ -149,7 +149,7 @@ export default function Healthcare() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-plus-jakarta-sans leading-tight mb-4"
             >
               <span className="text-gray-900">Healthcare &</span>
               <br />
@@ -197,7 +197,7 @@ export default function Healthcare() {
       <section className="pt-8 pb-16 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Healthcare Data Challenges
               </span>
@@ -216,7 +216,7 @@ export default function Healthcare() {
                 
                 className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300"
               >
-                <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+                <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                   {challenge.title}
                 </h3>
                 <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-4">
@@ -237,7 +237,7 @@ export default function Healthcare() {
       <section className="pt-8 pb-16 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Synthetic Data Solutions
               </span>
@@ -259,7 +259,7 @@ export default function Healthcare() {
                 <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                   <solution.icon className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                   {solution.title}
                 </h3>
                 <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -283,7 +283,7 @@ export default function Healthcare() {
       <section className="pt-8 pb-16 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Real-World Impact
               </span>
@@ -303,7 +303,7 @@ export default function Healthcare() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Heart className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-3xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 85%
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-lg">
@@ -320,7 +320,7 @@ export default function Healthcare() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <BarChart className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-3xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 60%
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-lg">
@@ -337,7 +337,7 @@ export default function Healthcare() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Shield className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-3xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 100%
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-lg">
@@ -352,7 +352,7 @@ export default function Healthcare() {
       <section className="pt-8 pb-16 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Regulatory Compliance
               </span>
@@ -374,7 +374,7 @@ export default function Healthcare() {
                 <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-4">
                   <Lock className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-lg font-bold font-garnett text-gray-900 mb-3">
+                <h3 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-3">
                   {item.framework}
                 </h3>
                 <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-sm mb-4">
@@ -404,7 +404,7 @@ export default function Healthcare() {
             className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-12"
           >
             <div className="text-center mb-12">
-              <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+              <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                   Case Study: Children's Hospital Research Institute
                 </span>
@@ -416,7 +416,7 @@ export default function Healthcare() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-6">
+                <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-6">
                   The Challenge
                 </h3>
                 <ul className="space-y-4">
@@ -436,7 +436,7 @@ export default function Healthcare() {
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-6">
+                <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-6">
                   The Solution
                 </h3>
                 <ul className="space-y-4">
@@ -546,7 +546,7 @@ export default function Healthcare() {
               </motion.div>
 
               <motion.h2
-                className="text-[2rem] font-bold font-garnett mb-1"
+                className="text-[2rem] font-bold font-plus-jakarta-sans mb-1"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}

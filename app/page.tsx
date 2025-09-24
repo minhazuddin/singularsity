@@ -162,7 +162,7 @@ export default function Home() {
                   transition={{ delay: 0.4, duration: 0.8 }}
                   className="space-y-2"
                 >
-                  <h1 className="text-[2rem] lg:text-5xl xl:text-6xl font-bold font-garnett leading-none">
+                  <h1 className="text-[2rem] lg:text-5xl xl:text-6xl font-bold font-plus-jakarta-sans leading-none">
                     <span className="text-gray-900">Privacy-First</span>
                     <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-emerald-600">
@@ -475,7 +475,7 @@ export default function Home() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-8">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Powerful
               </span>
@@ -523,7 +523,7 @@ export default function Home() {
                     </motion.div>
                     <div className="flex-1">
                       <motion.h3
-                        className="text-xl font-bold font-garnett text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300"
+                        className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300"
                         initial={{ opacity: 0.9 }}
                         whileHover={{ opacity: 1 }}
                       >
@@ -572,7 +572,7 @@ export default function Home() {
                     </motion.div>
                     <div className="flex-1">
                       <motion.h3
-                        className="text-xl font-bold font-garnett text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300"
+                        className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300"
                         initial={{ opacity: 0.9 }}
                         whileHover={{ opacity: 1 }}
                       >
@@ -621,7 +621,7 @@ export default function Home() {
                     </motion.div>
                     <div className="flex-1">
                       <motion.h3
-                        className="text-xl font-bold font-garnett text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300"
+                        className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300"
                         initial={{ opacity: 0.9 }}
                         whileHover={{ opacity: 1 }}
                       >
@@ -670,7 +670,7 @@ export default function Home() {
                     </motion.div>
                     <div className="flex-1">
                       <motion.h3
-                        className="text-xl font-bold font-garnett text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300"
+                        className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300"
                         initial={{ opacity: 0.9 }}
                         whileHover={{ opacity: 1 }}
                       >
@@ -719,7 +719,7 @@ export default function Home() {
                     </motion.div>
                     <div className="flex-1">
                       <motion.h3
-                        className="text-xl font-bold font-garnett text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300"
+                        className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300"
                         initial={{ opacity: 0.9 }}
                         whileHover={{ opacity: 1 }}
                       >
@@ -768,7 +768,7 @@ export default function Home() {
                     </motion.div>
                     <div className="flex-1">
                       <motion.h3
-                        className="text-xl font-bold font-garnett text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300"
+                        className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300"
                         initial={{ opacity: 0.9 }}
                         whileHover={{ opacity: 1 }}
                       >
@@ -795,7 +795,7 @@ export default function Home() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-8">
-            <h2 className="text-[2rem] font-bold font-garnett mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600">
                 How
               </span>
@@ -898,7 +898,7 @@ export default function Home() {
                     <Brain className="w-8 h-8 text-white" />
                   </motion.div>
 
-                  <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4 group-hover:text-blue-900 transition-colors duration-300">
+                  <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4 group-hover:text-blue-900 transition-colors duration-300">
                     Configure Data
               </h3>
 
@@ -976,7 +976,7 @@ export default function Home() {
                     <Settings className="w-8 h-8 text-white" />
                   </motion.div>
 
-                  <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4 group-hover:text-green-900 transition-colors duration-300">
+                  <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4 group-hover:text-green-900 transition-colors duration-300">
                     Generate & Validate
                   </h3>
 
@@ -1054,7 +1054,7 @@ export default function Home() {
                     <ArrowRight className="w-8 h-8 text-white ml-1" />
                   </motion.div>
 
-                  <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4 group-hover:text-purple-900 transition-colors duration-300">
+                  <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4 group-hover:text-purple-900 transition-colors duration-300">
                     Deploy & Scale
               </h3>
 
@@ -1124,7 +1124,7 @@ export default function Home() {
                   <Upload className="w-10 h-10 text-white" />
                 </motion.div>
 
-                <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4 group-hover:text-blue-900 transition-colors duration-300">
+                <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4 group-hover:text-blue-900 transition-colors duration-300">
                 Connect Your Data
               </h3>
 
@@ -1197,7 +1197,7 @@ export default function Home() {
                   <Settings className="w-10 h-10 text-white" />
                 </motion.div>
 
-                <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4 group-hover:text-green-900 transition-colors duration-300">
+                <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4 group-hover:text-green-900 transition-colors duration-300">
                 Configure Generation
               </h3>
 
@@ -1271,7 +1271,7 @@ export default function Home() {
                   <Play className="w-10 h-10 text-white ml-1" />
                 </motion.div>
 
-                <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4 group-hover:text-purple-900 transition-colors duration-300">
+                <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4 group-hover:text-purple-900 transition-colors duration-300">
                 Generate & Validate
               </h3>
 
@@ -1345,7 +1345,7 @@ export default function Home() {
                   <Download className="w-10 h-10 text-white" />
                 </motion.div>
 
-                <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4 group-hover:text-orange-900 transition-colors duration-300">
+                <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4 group-hover:text-orange-900 transition-colors duration-300">
                 Deploy & Scale
               </h3>
 
@@ -1383,7 +1383,7 @@ export default function Home() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-8">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Trusted
               </span>
@@ -1727,7 +1727,7 @@ export default function Home() {
             <div className="inline-flex items-center justify-center w-16 h-16 gradient-bg rounded-2xl mb-4 shadow-lg">
               <Star className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-[2rem] font-bold font-garnett text-primary mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-primary mb-4">
               Why Companies Choose Our
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-blue-600">
                 Synthetic Data
@@ -1763,7 +1763,7 @@ export default function Home() {
 
                   {/* Animated counter */}
                   <motion.div
-                    className="text-[2rem] font-bold font-garnett text-primary mb-2"
+                    className="text-[2rem] font-bold font-plus-jakarta-sans text-primary mb-2"
                     initial={{ scale: 0.5, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
                     viewport={{ once: true }}
@@ -1782,7 +1782,7 @@ export default function Home() {
                     />
               </div>
 
-                  <h3 className="text-xl font-bold font-garnett text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300">
                 Faster Model Training
               </h3>
                   <p className="text-gray-600 font-light leading-relaxed">
@@ -1813,7 +1813,7 @@ export default function Home() {
                   </motion.div>
 
                   <motion.div
-                    className="text-[2rem] font-bold font-garnett text-primary mb-2"
+                    className="text-[2rem] font-bold font-plus-jakarta-sans text-primary mb-2"
                     initial={{ scale: 0.5, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
                     viewport={{ once: true }}
@@ -1831,7 +1831,7 @@ export default function Home() {
                     />
               </div>
 
-                  <h3 className="text-xl font-bold font-garnett text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300">
                 Privacy Compliant
               </h3>
                   <p className="text-gray-600 font-light leading-relaxed">
@@ -1862,7 +1862,7 @@ export default function Home() {
                   </motion.div>
 
                   <motion.div
-                    className="text-[2rem] font-bold font-garnett text-primary mb-2"
+                    className="text-[2rem] font-bold font-plus-jakarta-sans text-primary mb-2"
                     initial={{ scale: 0.5, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
                     viewport={{ once: true }}
@@ -1880,7 +1880,7 @@ export default function Home() {
                     />
               </div>
 
-                  <h3 className="text-xl font-bold font-garnett text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300">
                 Improved Accuracy
               </h3>
                   <p className="text-gray-600 font-light leading-relaxed">
@@ -1911,7 +1911,7 @@ export default function Home() {
                   </motion.div>
 
                   <motion.div
-                    className="text-[2rem] font-bold font-garnett text-primary mb-2"
+                    className="text-[2rem] font-bold font-plus-jakarta-sans text-primary mb-2"
                     initial={{ scale: 0.5, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
                     viewport={{ once: true }}
@@ -1929,7 +1929,7 @@ export default function Home() {
                     />
               </div>
 
-                  <h3 className="text-xl font-bold font-garnett text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300">
                 Cost Reduction
               </h3>
                   <p className="text-gray-600 font-light leading-relaxed">
@@ -2077,7 +2077,7 @@ export default function Home() {
               </motion.div>
 
               <motion.h2
-                className="text-[2rem] font-bold font-garnett mb-1"
+                className="text-[2rem] font-bold font-plus-jakarta-sans mb-1"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
@@ -2110,7 +2110,7 @@ export default function Home() {
                   transition={{ delay: 0.9, duration: 0.5 }}
                   viewport={{ once: true }}
                 >
-                  <div className="text-3xl font-bold font-garnett text-white mb-1">87%</div>
+                  <div className="text-3xl font-bold font-plus-jakarta-sans text-white mb-1">87%</div>
                   <div className="text-sm text-white/80">Faster Training</div>
                 </motion.div>
                 <motion.div
@@ -2120,7 +2120,7 @@ export default function Home() {
                   transition={{ delay: 1.0, duration: 0.5 }}
                   viewport={{ once: true }}
                 >
-                  <div className="text-3xl font-bold font-garnett text-white mb-1">100%</div>
+                  <div className="text-3xl font-bold font-plus-jakarta-sans text-white mb-1">100%</div>
                   <div className="text-sm text-white/80">Privacy Safe</div>
                 </motion.div>
                 <motion.div
@@ -2130,7 +2130,7 @@ export default function Home() {
                   transition={{ delay: 1.1, duration: 0.5 }}
                   viewport={{ once: true }}
                 >
-                  <div className="text-3xl font-bold font-garnett text-white mb-1">60%</div>
+                  <div className="text-3xl font-bold font-plus-jakarta-sans text-white mb-1">60%</div>
                   <div className="text-sm text-white/80">Cost Savings</div>
                 </motion.div>
               </div>

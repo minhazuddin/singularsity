@@ -102,7 +102,7 @@ export default function Demo() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-plus-jakarta-sans leading-tight mb-4"
             >
               <span className="text-gray-900">Experience</span>
               <br />
@@ -148,7 +148,7 @@ export default function Demo() {
       <section className="py-24 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               Interactive Demonstrations
             </h2>
             <p className="text-xl text-gray-600 font-segoe max-w-3xl mx-auto">
@@ -171,7 +171,7 @@ export default function Demo() {
                     <IconComponent className="h-6 w-6 text-white" />
                   </div>
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-xl font-bold font-garnett text-gray-900">
+                    <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900">
                       {feature.title}
                     </h3>
                     <span className="text-xs bg-primary text-white px-2 py-1 rounded-full">
@@ -196,7 +196,7 @@ export default function Demo() {
       <section className="py-24 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               Platform Dashboard Preview
             </h2>
             <p className="text-xl text-gray-600 font-segoe max-w-3xl mx-auto">
@@ -216,7 +216,7 @@ export default function Demo() {
                 <div className="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center">
                   <Database className="h-4 w-4 text-white" />
                 </div>
-                <span className="font-garnett font-bold">Singularsity Dashboard</span>
+                <span className="font-plus-jakarta-sans font-bold">Singularsity Dashboard</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Settings className="h-4 w-4" />
@@ -294,7 +294,7 @@ export default function Demo() {
       <section className="py-24 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               Real-World Examples
             </h2>
             <p className="text-xl text-gray-600 font-segoe max-w-3xl mx-auto">
@@ -311,7 +311,7 @@ export default function Demo() {
                 
                 className="bg-gray-50 rounded-xl p-8"
               >
-                <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+                <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                   {example.title}
                 </h3>
                 <p className="text-gray-600 font-segoe mb-6">
@@ -347,7 +347,7 @@ export default function Demo() {
       <section className="py-24 bg-gradient-to-t from-slate-50 via-blue-50/30 to-purple-50/20 from-slate-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               Ready to Get Started?
             </h2>
             <p className="text-xl text-gray-600 font-segoe max-w-3xl mx-auto">
@@ -365,7 +365,7 @@ export default function Demo() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Play className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Self-Service Demo
               </h3>
               <p className="text-gray-600 font-segoe mb-6">
@@ -403,7 +403,7 @@ export default function Demo() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Eye className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Guided Demo
               </h3>
               <p className="text-gray-600 font-segoe mb-6">
@@ -522,7 +522,7 @@ export default function Demo() {
               </motion.div>
 
               <motion.h2
-                className="text-[2rem] font-bold font-garnett mb-1"
+                className="text-[2rem] font-bold font-plus-jakarta-sans mb-1"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}

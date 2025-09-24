@@ -76,7 +76,7 @@ export default function Careers() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-plus-jakarta-sans leading-tight mb-4"
             >
               <span className="text-gray-900">Join Our</span>
               <br />
@@ -124,7 +124,7 @@ export default function Careers() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Why Join Singularsity?
               </span>
@@ -144,7 +144,7 @@ export default function Careers() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <TrendingUp className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Impact at Scale
               </h3>
               <p className="text-gray-600 font-segoe">
@@ -161,7 +161,7 @@ export default function Careers() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Star className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Cutting-Edge Technology
               </h3>
               <p className="text-gray-600 font-segoe">
@@ -178,7 +178,7 @@ export default function Careers() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Heart className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Amazing Culture
               </h3>
               <p className="text-gray-600 font-segoe">
@@ -193,7 +193,7 @@ export default function Careers() {
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Comprehensive Benefits
               </span>
@@ -210,7 +210,7 @@ export default function Careers() {
               transition={{ duration: 0.6 }}
               className="bg-white p-6 rounded-xl shadow-sm"
             >
-              <h4 className="text-lg font-bold font-garnett text-gray-900 mb-3">
+              <h4 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-3">
                 Health & Wellness
               </h4>
               <ul className="space-y-2 text-gray-600 font-segoe">
@@ -235,7 +235,7 @@ export default function Careers() {
               
               className="bg-white p-6 rounded-xl shadow-sm"
             >
-              <h4 className="text-lg font-bold font-garnett text-gray-900 mb-3">
+              <h4 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-3">
                 Financial Benefits
               </h4>
               <ul className="space-y-2 text-gray-600 font-segoe">
@@ -260,7 +260,7 @@ export default function Careers() {
               
               className="bg-white p-6 rounded-xl shadow-sm"
             >
-              <h4 className="text-lg font-bold font-garnett text-gray-900 mb-3">
+              <h4 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-3">
                 Work-Life Balance
               </h4>
               <ul className="space-y-2 text-gray-600 font-segoe">
@@ -285,7 +285,7 @@ export default function Careers() {
               
               className="bg-white p-6 rounded-xl shadow-sm"
             >
-              <h4 className="text-lg font-bold font-garnett text-gray-900 mb-3">
+              <h4 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-3">
                 Growth & Development
               </h4>
               <ul className="space-y-2 text-gray-600 font-segoe">
@@ -310,7 +310,7 @@ export default function Careers() {
               
               className="bg-white p-6 rounded-xl shadow-sm"
             >
-              <h4 className="text-lg font-bold font-garnett text-gray-900 mb-3">
+              <h4 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-3">
                 Perks & Amenities
               </h4>
               <ul className="space-y-2 text-gray-600 font-segoe">
@@ -335,7 +335,7 @@ export default function Careers() {
               
               className="bg-white p-6 rounded-xl shadow-sm"
             >
-              <h4 className="text-lg font-bold font-garnett text-gray-900 mb-3">
+              <h4 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-3">
                 Family Support
               </h4>
               <ul className="space-y-2 text-gray-600 font-segoe">
@@ -361,7 +361,7 @@ export default function Careers() {
       <section id="open-positions" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Open Positions
               </span>
@@ -381,7 +381,7 @@ export default function Careers() {
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between">
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-2">
+                  <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                     Senior Machine Learning Engineer
                   </h3>
                   <div className="flex flex-wrap gap-4 mb-4 text-gray-600 font-segoe">
@@ -423,7 +423,7 @@ export default function Careers() {
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between">
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-2">
+                  <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                     Privacy Engineer
                   </h3>
                   <div className="flex flex-wrap gap-4 mb-4 text-gray-600 font-segoe">
@@ -465,7 +465,7 @@ export default function Careers() {
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between">
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-2">
+                  <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                     Full Stack Developer
                   </h3>
                   <div className="flex flex-wrap gap-4 mb-4 text-gray-600 font-segoe">
@@ -507,7 +507,7 @@ export default function Careers() {
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between">
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-2">
+                  <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                     Product Manager
                   </h3>
                   <div className="flex flex-wrap gap-4 mb-4 text-gray-600 font-segoe">
@@ -638,7 +638,7 @@ export default function Careers() {
               </motion.div>
 
               <motion.h2
-                className="text-[2rem] font-bold font-garnett mb-1"
+                className="text-[2rem] font-bold font-plus-jakarta-sans mb-1"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}

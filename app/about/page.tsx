@@ -127,7 +127,7 @@ export default function About() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-plus-jakarta-sans leading-tight mb-4"
             >
               <span className="text-gray-900">Building the Future of</span>
               <br />
@@ -165,7 +165,7 @@ export default function About() {
               <div className="w-16 h-16 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center mb-8 shadow-lg">
                 <Target className="h-8 w-8 text-white" />
               </div>
-              <h2 className="text-3xl font-bold font-garnett text-gray-900 mb-6">
+              <h2 className="text-3xl font-bold font-plus-jakarta-sans text-gray-900 mb-6">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                   Our Mission
                 </span>
@@ -188,7 +188,7 @@ export default function About() {
               <div className="w-16 h-16 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center mb-8 shadow-lg">
                 <Lightbulb className="h-8 w-8 text-white" />
               </div>
-              <h2 className="text-3xl font-bold font-garnett text-gray-900 mb-6">
+              <h2 className="text-3xl font-bold font-plus-jakarta-sans text-gray-900 mb-6">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                   Our Vision
                 </span>
@@ -218,7 +218,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-[2rem] font-bold font-garnett text-gray-900 mb-4"
+              className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4"
             >
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Our Core Values
@@ -249,7 +249,7 @@ export default function About() {
               >
                 <Shield className="h-8 w-8 text-white" />
               </motion.div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Privacy First
               </h3>
               <p className="text-gray-600 font-segoe">
@@ -270,7 +270,7 @@ export default function About() {
               >
                 <Brain className="h-8 w-8 text-white" />
               </motion.div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Scientific Rigor
               </h3>
               <p className="text-gray-600 font-segoe">
@@ -291,7 +291,7 @@ export default function About() {
               >
                 <Heart className="h-8 w-8 text-white" />
               </motion.div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Customer Success
               </h3>
               <p className="text-gray-600 font-segoe">
@@ -312,7 +312,7 @@ export default function About() {
               >
                 <Globe className="h-8 w-8 text-white" />
               </motion.div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Global Impact
               </h3>
               <p className="text-gray-600 font-segoe">
@@ -327,7 +327,7 @@ export default function About() {
       <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Leadership Team
               </span>
@@ -347,7 +347,7 @@ export default function About() {
                 className="bg-gray-50 rounded-xl p-8 text-center hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="text-6xl mb-6">{member.image}</div>
-                <h3 className="text-xl font-bold font-garnett text-gray-900 mb-2">
+                <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                   {member.name}
                 </h3>
                 <p className="text-primary font-medium mb-4">{member.role}</p>
@@ -362,7 +362,7 @@ export default function About() {
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Our Journey
               </span>
@@ -388,7 +388,7 @@ export default function About() {
                     <div className="w-12 h-12 gradient-bg rounded-full flex items-center justify-center mb-4">
                       <span className="text-white font-bold">{milestone.year}</span>
                     </div>
-                    <h3 className="text-xl font-bold font-garnett text-gray-900 mb-3">
+                    <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-3">
                       {milestone.title}
                     </h3>
                     <p className="text-gray-600 font-segoe">{milestone.description}</p>
@@ -406,7 +406,7 @@ export default function About() {
       <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Recognition & Achievements
               </span>
@@ -426,7 +426,7 @@ export default function About() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Award className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 Gartner Cool Vendor
               </h3>
               <p className="text-gray-600 font-segoe">
@@ -443,7 +443,7 @@ export default function About() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 500+ Customers
               </h3>
               <p className="text-gray-600 font-segoe">
@@ -460,7 +460,7 @@ export default function About() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Shield className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 Enterprise Certified
               </h3>
               <p className="text-gray-600 font-segoe">
@@ -558,7 +558,7 @@ export default function About() {
               </motion.div>
 
               <motion.h2
-                className="text-[2rem] font-bold font-garnett mb-1"
+                className="text-[2rem] font-bold font-plus-jakarta-sans mb-1"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}

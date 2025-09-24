@@ -286,7 +286,7 @@ function ProjectsMainContent({
               <ArrowLeft className="h-5 w-5 text-gray-600 group-hover:text-primary transition-colors duration-200" />
             </Link>
             <div>
-              <h1 className="text-2xl font-bold font-garnett text-gray-900 flex items-center">
+              <h1 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 flex items-center">
                 Projects
                 <motion.div
                   animate={{ rotate: [0, 5, -5, 0] }}
@@ -511,7 +511,7 @@ function ProjectsMainContent({
               >
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex-1">
-                    <h3 className="font-semibold text-gray-900 font-garnett mb-1">
+                    <h3 className="font-semibold text-gray-900 font-plus-jakarta-sans mb-1">
                       {project.name}
                     </h3>
                     <p className="text-sm text-gray-600 font-segoe">

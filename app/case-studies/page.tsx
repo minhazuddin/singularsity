@@ -173,7 +173,7 @@ export default function CaseStudies() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-plus-jakarta-sans leading-tight mb-4"
             >
               <span className="text-gray-900">Real-World</span>
               <br />
@@ -238,7 +238,7 @@ export default function CaseStudies() {
                           <IconComponent className="h-6 w-6 text-white" />
                         </div>
                         <div>
-                          <h3 className="text-2xl font-bold font-garnett text-gray-900">
+                          <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900">
                             {study.company}
                           </h3>
                           <p className="text-sm text-gray-600 font-segoe">
@@ -249,7 +249,7 @@ export default function CaseStudies() {
 
                       <div className="space-y-6">
                         <div>
-                          <h4 className="text-lg font-bold font-garnett text-gray-900 mb-2">
+                          <h4 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                             Challenge
                           </h4>
                           <p className="text-gray-600 font-segoe">
@@ -258,7 +258,7 @@ export default function CaseStudies() {
                         </div>
 
                         <div>
-                          <h4 className="text-lg font-bold font-garnett text-gray-900 mb-2">
+                          <h4 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                             Solution
                           </h4>
                           <p className="text-gray-600 font-segoe">
@@ -278,13 +278,13 @@ export default function CaseStudies() {
                     </div>
 
                     <div>
-                      <h4 className="text-lg font-bold font-garnett text-gray-900 mb-6">
+                      <h4 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-6">
                         Results Achieved
                       </h4>
                       
                       <div className="grid grid-cols-2 gap-4 mb-8">
                         <div className="text-center">
-                          <div className="text-3xl font-bold font-garnett text-primary mb-2">
+                          <div className="text-3xl font-bold font-plus-jakarta-sans text-primary mb-2">
                             {study.metrics.accuracy}%
                           </div>
                           <div className="text-sm text-gray-600 font-segoe">
@@ -292,7 +292,7 @@ export default function CaseStudies() {
                           </div>
                         </div>
                         <div className="text-center">
-                          <div className="text-3xl font-bold font-garnett text-primary mb-2">
+                          <div className="text-3xl font-bold font-plus-jakarta-sans text-primary mb-2">
                             {study.metrics.compliance}%
                           </div>
                           <div className="text-sm text-gray-600 font-segoe">
@@ -300,7 +300,7 @@ export default function CaseStudies() {
                           </div>
                         </div>
                         <div className="text-center">
-                          <div className="text-3xl font-bold font-garnett text-primary mb-2">
+                          <div className="text-3xl font-bold font-plus-jakarta-sans text-primary mb-2">
                             {study.metrics.timeReduction}%
                           </div>
                           <div className="text-sm text-gray-600 font-segoe">
@@ -308,7 +308,7 @@ export default function CaseStudies() {
                           </div>
                         </div>
                         <div className="text-center">
-                          <div className="text-3xl font-bold font-garnett text-primary mb-2">
+                          <div className="text-3xl font-bold font-plus-jakarta-sans text-primary mb-2">
                             {study.metrics.costSavings}%
                           </div>
                           <div className="text-sm text-gray-600 font-segoe">
@@ -343,7 +343,7 @@ export default function CaseStudies() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="text-[2rem] font-bold font-garnett text-gray-900 mb-4"
+              className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4"
             >
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Success Across Industries
@@ -369,10 +369,10 @@ export default function CaseStudies() {
                 
                 className="bg-white rounded-xl p-6 shadow-lg text-center"
               >
-                <h3 className="text-xl font-bold font-garnett text-gray-900 mb-2">
+                <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                   {industry.name}
                 </h3>
-                <div className="text-3xl font-bold font-garnett text-primary mb-2">
+                <div className="text-3xl font-bold font-plus-jakarta-sans text-primary mb-2">
                   {industry.count}
                 </div>
                 <p className="text-sm text-gray-600 font-segoe mb-2">
@@ -475,7 +475,7 @@ export default function CaseStudies() {
               </motion.div>
 
               <motion.h2
-                className="text-[2rem] font-bold font-garnett mb-1"
+                className="text-[2rem] font-bold font-plus-jakarta-sans mb-1"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}

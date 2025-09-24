@@ -77,7 +77,7 @@ export default function DataGeneration() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-plus-jakarta-sans leading-tight mb-4"
             >
               <span className="text-gray-900">AI-Powered</span>
               <br />
@@ -125,7 +125,7 @@ export default function DataGeneration() {
       <section className="pt-8 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Advanced Generation Technologies
               </span>
@@ -145,7 +145,7 @@ export default function DataGeneration() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Brain className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Deep Learning Models
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -162,7 +162,7 @@ export default function DataGeneration() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Database className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Multi-Modal Support
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -179,7 +179,7 @@ export default function DataGeneration() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Shield className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Differential Privacy
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -196,7 +196,7 @@ export default function DataGeneration() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Zap className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Real-Time Generation
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -213,7 +213,7 @@ export default function DataGeneration() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <BarChart className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Statistical Fidelity
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -230,7 +230,7 @@ export default function DataGeneration() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Cpu className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Custom Constraints
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -245,7 +245,7 @@ export default function DataGeneration() {
       <section className="pt-8 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Transform Your Data Strategy
               </span>
@@ -262,7 +262,7 @@ export default function DataGeneration() {
               transition={{ duration: 0.6 }}
               className="bg-white rounded-xl p-8 shadow-lg"
             >
-              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 ML Model Training
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -290,7 +290,7 @@ export default function DataGeneration() {
               transition={{ duration: 0.6 }}
               className="bg-white rounded-xl p-8 shadow-lg"
             >
-              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Development & Testing
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -318,7 +318,7 @@ export default function DataGeneration() {
               
               className="bg-white rounded-xl p-8 shadow-lg"
             >
-              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Data Sharing & Collaboration
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -346,7 +346,7 @@ export default function DataGeneration() {
               
               className="bg-white rounded-xl p-8 shadow-lg"
             >
-              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Analytics & BI
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -375,7 +375,7 @@ export default function DataGeneration() {
       <section className="pt-8 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Technical Excellence
               </span>
@@ -395,7 +395,7 @@ export default function DataGeneration() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Clock className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-3xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 99.5%
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-lg">
@@ -412,7 +412,7 @@ export default function DataGeneration() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Zap className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-3xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 10M+
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-lg">
@@ -429,7 +429,7 @@ export default function DataGeneration() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Globe className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-3xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 50+
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-lg">
@@ -527,7 +527,7 @@ export default function DataGeneration() {
               </motion.div>
 
               <motion.h2
-                className="text-[2rem] font-bold font-garnett mb-1"
+                className="text-[2rem] font-bold font-plus-jakarta-sans mb-1"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}

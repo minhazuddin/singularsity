@@ -26,7 +26,7 @@ module.exports = {
         foreground: 'var(--foreground)',
       },
       fontFamily: {
-        'garnett': ['Plus Jakarta Sans', 'sans-serif'],
+        'plus-jakarta-sans': ['Plus Jakarta Sans', 'sans-serif'],
         'segoe': ['Segoe UI', 'sans-serif'],
       },
       fontSize: {

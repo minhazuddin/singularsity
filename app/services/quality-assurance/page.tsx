@@ -77,7 +77,7 @@ export default function QualityAssurance() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-plus-jakarta-sans leading-tight mb-4"
             >
               <span className="text-gray-900">Synthetic Data</span>
               <br />
@@ -125,7 +125,7 @@ export default function QualityAssurance() {
       <section className="pt-8 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Comprehensive Quality Dimensions
               </span>
@@ -145,7 +145,7 @@ export default function QualityAssurance() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <BarChart className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Statistical Fidelity
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -162,7 +162,7 @@ export default function QualityAssurance() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Shield className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Privacy Protection
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -179,7 +179,7 @@ export default function QualityAssurance() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Target className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Utility Preservation
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -196,7 +196,7 @@ export default function QualityAssurance() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Database className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Data Integrity
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -213,7 +213,7 @@ export default function QualityAssurance() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <TrendingUp className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Diversity & Coverage
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -230,7 +230,7 @@ export default function QualityAssurance() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Zap className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Performance Validation
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -245,7 +245,7 @@ export default function QualityAssurance() {
       <section className="pt-8 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Automated Testing Framework
               </span>
@@ -262,7 +262,7 @@ export default function QualityAssurance() {
               transition={{ duration: 0.6 }}
               className="bg-white rounded-xl p-8 shadow-lg"
             >
-              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Statistical Tests
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -294,7 +294,7 @@ export default function QualityAssurance() {
               transition={{ duration: 0.6 }}
               className="bg-white rounded-xl p-8 shadow-lg"
             >
-              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Privacy Audits
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -326,7 +326,7 @@ export default function QualityAssurance() {
               
               className="bg-white rounded-xl p-8 shadow-lg"
             >
-              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 ML Model Validation
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -358,7 +358,7 @@ export default function QualityAssurance() {
               
               className="bg-white rounded-xl p-8 shadow-lg"
             >
-              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Business Rule Testing
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -391,7 +391,7 @@ export default function QualityAssurance() {
       <section className="pt-8 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Quality Assurance Results
               </span>
@@ -411,7 +411,7 @@ export default function QualityAssurance() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Target className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-3xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 99.8%
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-lg">
@@ -428,7 +428,7 @@ export default function QualityAssurance() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Shield className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-3xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 Zero
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-lg">
@@ -445,7 +445,7 @@ export default function QualityAssurance() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Settings className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-3xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 1000+
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-lg">
@@ -543,7 +543,7 @@ export default function QualityAssurance() {
               </motion.div>
 
               <motion.h2
-                className="text-[2rem] font-bold font-garnett mb-1"
+                className="text-[2rem] font-bold font-plus-jakarta-sans mb-1"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}

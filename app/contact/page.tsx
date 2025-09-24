@@ -77,7 +77,7 @@ export default function Contact() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-plus-jakarta-sans leading-tight mb-4"
             >
               <span className="text-gray-900">Get in</span>
               <br />
@@ -114,7 +114,7 @@ export default function Contact() {
               transition={{ duration: 0.6 }}
               className="bg-white/80 backdrop-blur-xl rounded-3xl p-8 lg:p-12 shadow-xl border border-white/50"
             >
-              <h2 className="text-3xl font-bold font-garnett text-gray-900 mb-6">
+              <h2 className="text-3xl font-bold font-plus-jakarta-sans text-gray-900 mb-6">
                 Send us a Message
               </h2>
               <p className="text-gray-600 font-segoe mb-8">
@@ -221,7 +221,7 @@ export default function Contact() {
               className="space-y-8"
             >
               <div>
-                <h2 className="text-3xl font-bold font-garnett text-gray-900 mb-6">
+                <h2 className="text-3xl font-bold font-plus-jakarta-sans text-gray-900 mb-6">
                   Contact Information
                 </h2>
                 <p className="text-gray-600 font-segoe mb-8">
@@ -242,7 +242,7 @@ export default function Contact() {
                     <Mail className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold font-garnett text-gray-900 mb-1">
+                    <h3 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-1">
                       Email Us
                     </h3>
                     <p className="text-gray-600 font-segoe mb-2">
@@ -265,7 +265,7 @@ export default function Contact() {
                     <Phone className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold font-garnett text-gray-900 mb-1">
+                    <h3 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-1">
                       Call Us
                     </h3>
                     <p className="text-gray-600 font-segoe mb-2">
@@ -282,7 +282,7 @@ export default function Contact() {
                     <Clock className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold font-garnett text-gray-900 mb-1">
+                    <h3 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-1">
                       Business Hours
                     </h3>
                     <p className="text-gray-600 font-segoe">
@@ -295,7 +295,7 @@ export default function Contact() {
 
               {/* Quick Actions */}
               <div className="space-y-4 pt-8 border-t border-gray-200">
-                <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+                <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                   Quick Actions
                 </h3>
                 
@@ -305,7 +305,7 @@ export default function Contact() {
                 >
                   <div className="flex items-center justify-between">
                     <div>
-                      <h4 className="font-bold font-garnett text-white mb-1">
+                      <h4 className="font-bold font-plus-jakarta-sans text-white mb-1">
                         Schedule a Demo
                       </h4>
                       <p className="text-white text-sm opacity-90">
@@ -322,7 +322,7 @@ export default function Contact() {
                 >
                   <div className="flex items-center justify-between">
                     <div>
-                      <h4 className="font-bold font-garnett text-gray-900 mb-1">
+                      <h4 className="font-bold font-plus-jakarta-sans text-gray-900 mb-1">
                         View Pricing
                       </h4>
                       <p className="text-gray-600 text-sm">
@@ -342,7 +342,7 @@ export default function Contact() {
       <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Our Locations
               </span>
@@ -363,7 +363,7 @@ export default function Contact() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Building className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 Mumbai HQ
               </h3>
               <div className="text-gray-600 font-segoe space-y-2">
@@ -387,7 +387,7 @@ export default function Contact() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Building className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 New York Office
               </h3>
               <div className="text-gray-600 font-segoe space-y-2">
@@ -410,7 +410,7 @@ export default function Contact() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Building className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 London Office
               </h3>
               <div className="text-gray-600 font-segoe space-y-2">
@@ -430,7 +430,7 @@ export default function Contact() {
       <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-plus-jakarta-sans text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Talk to Our Experts
               </span>
@@ -451,7 +451,7 @@ export default function Contact() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Sales Team
               </h3>
               <p className="text-gray-600 font-segoe mb-6">
@@ -476,7 +476,7 @@ export default function Contact() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <MessageSquare className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Technical Support
               </h3>
               <p className="text-gray-600 font-segoe mb-6">
@@ -501,7 +501,7 @@ export default function Contact() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Building className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Partnerships
               </h3>
               <p className="text-gray-600 font-segoe mb-6">
@@ -606,7 +606,7 @@ export default function Contact() {
               </motion.div>
 
               <motion.h2
-                className="text-[2rem] font-bold font-garnett mb-1"
+                className="text-[2rem] font-bold font-plus-jakarta-sans mb-1"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}

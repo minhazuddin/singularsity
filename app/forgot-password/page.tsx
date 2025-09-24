@@ -116,7 +116,7 @@ export default function ForgotPassword() {
               </div>
             </div>
             
-            <h1 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
+            <h1 className="text-3xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
               Forgot Password?
             </h1>
             <p className="text-gray-600 font-segoe">
@@ -229,7 +229,7 @@ export default function ForgotPassword() {
                     </div>
                   </div>
                   
-                  <h3 className="text-xl font-bold font-garnett text-gray-900 mb-2">
+                  <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                     Check Your Email
                   </h3>
                   <p className="text-gray-600 font-segoe mb-6">

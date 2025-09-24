@@ -18,7 +18,7 @@ export default function Terms() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-plus-jakarta-sans leading-tight mb-4"
             >
               <span className="text-gray-900">Terms of</span>
               <br />
@@ -59,7 +59,7 @@ export default function Terms() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
                 <Scale className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 Fair Use
               </h3>
               <p className="text-gray-600 font-segoe text-sm">
@@ -76,7 +76,7 @@ export default function Terms() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 Data Protection
               </h3>
               <p className="text-gray-600 font-segoe text-sm">
@@ -93,7 +93,7 @@ export default function Terms() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
                 <FileText className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-bold font-garnett text-gray-900 mb-2">
+              <h3 className="text-lg font-bold font-plus-jakarta-sans text-gray-900 mb-2">
                 Clear Terms
               </h3>
               <p className="text-gray-600 font-segoe text-sm">
@@ -114,7 +114,7 @@ export default function Terms() {
             className="bg-white rounded-2xl p-8 lg:p-12 shadow-sm"
           >
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6">
+              <h2 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-6">
                 1. Acceptance of Terms
               </h2>
               
@@ -122,7 +122,7 @@ export default function Terms() {
                 By accessing or using Singularsity's synthetic data platform and services (the "Service"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of these terms, you may not access the Service. These Terms apply to all visitors, users, and others who access or use the Service.
               </p>
 
-              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-6 mt-12">
                 2. Description of Service
               </h2>
               
@@ -137,18 +137,18 @@ export default function Terms() {
                 <li>Customer support and documentation</li>
               </ul>
 
-              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-6 mt-12">
                 3. User Accounts
               </h2>
               
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Account Creation
               </h3>
               <p className="text-gray-600 font-segoe mb-4">
                 To use certain features of the Service, you must register for an account. You must provide accurate, complete, and current information during registration and keep your account information updated.
               </p>
 
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Account Security
               </h3>
               <p className="text-gray-600 font-segoe mb-4">
@@ -161,11 +161,11 @@ export default function Terms() {
                 <li>Ensuring compliance with these Terms by all users of your account</li>
               </ul>
 
-              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-6 mt-12">
                 4. Acceptable Use
               </h2>
               
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Permitted Uses
               </h3>
               <p className="text-gray-600 font-segoe mb-4">
@@ -179,7 +179,7 @@ export default function Terms() {
                 <li>Regulatory compliance testing</li>
               </ul>
 
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Prohibited Uses
               </h3>
               <p className="text-gray-600 font-segoe mb-4">
@@ -195,11 +195,11 @@ export default function Terms() {
                 <li>Violate any applicable laws, regulations, or third-party rights</li>
               </ul>
 
-              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-6 mt-12">
                 5. Data and Privacy
               </h2>
               
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Your Data
               </h3>
               <p className="text-gray-600 font-segoe mb-4">
@@ -212,25 +212,25 @@ export default function Terms() {
                 <li>Not use Your Data for any other purpose without consent</li>
               </ul>
 
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Synthetic Data
               </h3>
               <p className="text-gray-600 font-segoe mb-6">
                 The synthetic data we generate for you is your property. However, we may retain aggregated, anonymized insights about data patterns and usage to improve our Service, provided such insights cannot be used to identify you or reconstruct your original data.
               </p>
 
-              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-6 mt-12">
                 6. Payment and Billing
               </h2>
               
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Fees
               </h3>
               <p className="text-gray-600 font-segoe mb-4">
                 Use of certain features of the Service requires payment of fees. Current fees are described on our pricing page. We reserve the right to change fees with 30 days' notice.
               </p>
 
-              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-plus-jakarta-sans text-gray-900 mb-4">
                 Payment Terms
               </h3>
               <ul className="list-disc pl-6 mb-6 text-gray-600 font-segoe space-y-2">
@@ -240,7 +240,7 @@ export default function Terms() {
                 <li>You're responsible for all taxes related to your use of the Service</li>
               </ul>
 
-              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-6 mt-12">
                 7. Intellectual Property
               </h2>
               
@@ -248,7 +248,7 @@ export default function Terms() {
                 The Service and its original content, features, and functionality are owned by Singularsity and protected by international copyright, trademark, patent, trade secret, and other intellectual property laws. You may not copy, modify, distribute, sell, or lease any part of our Service.
               </p>
 
-              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-6 mt-12">
                 8. Service Availability
               </h2>
               
@@ -262,7 +262,7 @@ export default function Terms() {
                 <li>Modify or discontinue features with reasonable notice</li>
               </ul>
 
-              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-6 mt-12">
                 9. Disclaimers and Limitations
               </h2>
               
@@ -282,7 +282,7 @@ export default function Terms() {
                 To the maximum extent permitted by law, our liability for any damages arising from your use of the Service is limited to the amount you paid us in the 12 months preceding the claim. We are not liable for indirect, incidental, special, consequential, or punitive damages.
               </p>
 
-              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-6 mt-12">
                 10. Indemnification
               </h2>
               
@@ -290,7 +290,7 @@ export default function Terms() {
                 You agree to indemnify and hold harmless Singularsity and its officers, directors, employees, and agents from any claims, damages, losses, or expenses arising from your use of the Service, violation of these Terms, or infringement of any third-party rights.
               </p>
 
-              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-6 mt-12">
                 11. Termination
               </h2>
               
@@ -307,7 +307,7 @@ export default function Terms() {
                 Upon termination, your right to access the Service ceases immediately. We will delete Your Data according to our data retention policies unless legally required to retain it.
               </p>
 
-              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-6 mt-12">
                 12. Governing Law
               </h2>
               
@@ -315,7 +315,7 @@ export default function Terms() {
                 These Terms are governed by the laws of India, without regard to conflict of law principles. Any disputes will be resolved in the courts of Mumbai, Maharashtra.
               </p>
 
-              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-6 mt-12">
                 13. Changes to Terms
               </h2>
               
@@ -323,7 +323,7 @@ export default function Terms() {
                 We may modify these Terms at any time by posting the updated terms on our website. Material changes will be notified via email or through the Service. Your continued use after such modifications constitutes acceptance of the new Terms.
               </p>
 
-              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-plus-jakarta-sans text-gray-900 mb-6 mt-12">
                 14. Contact Information
               </h2>
               
