@@ -165,7 +165,7 @@ export default function Home() {
                   <h1 className="text-[2rem] lg:text-5xl xl:text-6xl font-bold font-plus-jakarta-sans leading-none">
                     <span className="text-gray-900">Privacy-First</span>
                     <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-emerald-600">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-l from-blue-600 via-purple-600 to-emerald-600">
                       Synthetic Data
                     </span>
                     <br />
