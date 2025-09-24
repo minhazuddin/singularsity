@@ -515,7 +515,7 @@ function GenerateMainContent({
               <ArrowLeft className="h-5 w-5 text-gray-600 group-hover:text-primary transition-colors duration-200" />
             </Link>
             <div>
-              <h1 className="text-2xl font-bold font-space-grotesk text-gray-900 flex items-center">
+              <h1 className="text-2xl font-bold font-garnett text-gray-900 flex items-center">
                 Generate Synthetic Data
                 <motion.div
                   animate={{ rotate: [0, 10, -10, 0] }}
@@ -581,7 +581,7 @@ function GenerateMainContent({
             >
               <div className="flex items-center justify-between mb-6">
                 <div>
-                  <h2 className="text-lg font-bold font-space-grotesk text-gray-900 flex items-center">
+                  <h2 className="text-lg font-bold font-garnett text-gray-900 flex items-center">
                     <span className="w-8 h-8 bg-gradient-to-r from-primary to-secondary text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
                     Choose Your Data Source
                   </h2>
@@ -722,7 +722,7 @@ function GenerateMainContent({
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="text-center mb-6">
-                <h2 className="text-lg font-bold font-space-grotesk text-gray-900">
+                <h2 className="text-lg font-bold font-garnett text-gray-900">
                   Choose Custom Data Type
                 </h2>
                 <p className="text-sm text-gray-600 font-segoe mt-2">
@@ -778,7 +778,7 @@ function GenerateMainContent({
                         </div>
                       </div>
                       
-                      <h3 className="font-bold font-space-grotesk text-gray-900 text-lg mb-2 group-hover:text-primary transition-colors duration-300">
+                      <h3 className="font-bold font-garnett text-gray-900 text-lg mb-2 group-hover:text-primary transition-colors duration-300">
                         {type.name}
                       </h3>
                       <p className="text-sm text-gray-600 font-segoe mb-4">
@@ -827,7 +827,7 @@ function GenerateMainContent({
             >
               <div className="flex items-center justify-between mb-6">
                 <div>
-                  <h2 className="text-lg font-bold font-space-grotesk text-gray-900 flex items-center">
+                  <h2 className="text-lg font-bold font-garnett text-gray-900 flex items-center">
                     <span className="w-8 h-8 bg-gradient-to-r from-primary to-secondary text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
                     Basic Configuration
                   </h2>
@@ -910,7 +910,7 @@ function GenerateMainContent({
             >
               <div className="flex items-center justify-between mb-6">
                 <div>
-                  <h2 className="text-lg font-bold font-space-grotesk text-gray-900 flex items-center">
+                  <h2 className="text-lg font-bold font-garnett text-gray-900 flex items-center">
                     <span className="w-8 h-8 bg-gradient-to-r from-primary to-secondary text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
                     Choose ML Model
               </h2>
@@ -938,7 +938,7 @@ function GenerateMainContent({
                       modelSettings: { ...prev.modelSettings, model: model.id }
                     }))}
                   >
-                    <h3 className="font-semibold font-space-grotesk text-gray-900 mb-2">
+                    <h3 className="font-semibold font-garnett text-gray-900 mb-2">
                       {model.name}
                     </h3>
                     <p className="text-sm text-gray-600 font-segoe mb-3">
@@ -962,7 +962,7 @@ function GenerateMainContent({
             >
               <div className="flex items-center justify-between mb-6">
                 <div>
-                  <h2 className="text-lg font-bold font-space-grotesk text-gray-900 flex items-center">
+                  <h2 className="text-lg font-bold font-garnett text-gray-900 flex items-center">
                     <span className="w-8 h-8 bg-gradient-to-r from-primary to-secondary text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">4</span>
                     Bias Detection & Fairness
               </h2>
@@ -1033,7 +1033,7 @@ function GenerateMainContent({
             >
               <div className="flex items-center justify-between mb-6">
                 <div>
-                  <h2 className="text-lg font-bold font-space-grotesk text-gray-900 flex items-center">
+                  <h2 className="text-lg font-bold font-garnett text-gray-900 flex items-center">
                     <span className="w-8 h-8 bg-gradient-to-r from-primary to-secondary text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">5</span>
                     Advanced Settings
               </h2>
@@ -1138,7 +1138,7 @@ function GenerateMainContent({
             >
               <div className="flex items-center justify-between mb-6">
                 <div>
-                  <h2 className="text-lg font-bold font-space-grotesk text-gray-900 flex items-center">
+                  <h2 className="text-lg font-bold font-garnett text-gray-900 flex items-center">
                     <span className="w-8 h-8 bg-gradient-to-r from-primary to-secondary text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">6</span>
                     Generate Synthetic Data
                   </h2>
@@ -1153,7 +1153,7 @@ function GenerateMainContent({
               
               <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="text-center">
-                  <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-2">
+                  <h3 className="text-lg font-bold font-garnett text-gray-900 mb-2">
                     Ready to Generate
                   </h3>
                   <p className="text-sm text-gray-600 font-segoe mb-6">
@@ -1198,7 +1198,7 @@ function GenerateMainContent({
           {/* Configuration Summary Sidebar */}
           <div className="w-80 p-6">
             <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300 sticky top-24">
-              <h3 className="font-bold font-space-grotesk text-gray-900 mb-4 flex items-center">
+              <h3 className="font-bold font-garnett text-gray-900 mb-4 flex items-center">
                 <Settings className="h-5 w-5 text-primary mr-2" />
                 Configuration Summary
               </h3>

@@ -179,7 +179,7 @@ export default function Pricing() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-space-grotesk leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
             >
               <span className="text-gray-900">Simple, Transparent</span>
               <br />
@@ -289,14 +289,14 @@ export default function Pricing() {
                     >
                       <IconComponent className="h-6 w-6 text-white" />
                     </motion.div>
-                    <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-1">
+                    <h3 className="text-lg font-bold font-garnett text-gray-900 mb-1">
                       {plan.name}
                     </h3>
                     <p className="text-sm text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-2">
                       {plan.description}
                     </p>
                     <div className="flex items-baseline justify-center">
-                      <span className="text-[2rem] font-bold font-space-grotesk text-gray-900">
+                      <span className="text-[2rem] font-bold font-garnett text-gray-900">
                         {getDisplayPrice(plan).price}
                       </span>
                       <span className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 ml-1">
@@ -354,7 +354,7 @@ export default function Pricing() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold font-space-grotesk text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold font-garnett text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Frequently Asked Questions
               </span>
@@ -372,7 +372,7 @@ export default function Pricing() {
               transition={{ duration: 0.6 }}
               className="bg-white/80 backdrop-blur-xl rounded-2xl p-6 shadow-xl border border-white/50"
             >
-              <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-2">
+              <h3 className="text-lg font-bold font-garnett text-gray-900 mb-2">
                 Can I upgrade or downgrade my plan anytime?
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -387,7 +387,7 @@ export default function Pricing() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="bg-white/80 backdrop-blur-xl rounded-2xl p-6 shadow-xl border border-white/50"
             >
-              <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-2">
+              <h3 className="text-lg font-bold font-garnett text-gray-900 mb-2">
                 What happens if I exceed my plan limits?
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -402,7 +402,7 @@ export default function Pricing() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-white/80 backdrop-blur-xl rounded-2xl p-6 shadow-xl border border-white/50"
             >
-              <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-2">
+              <h3 className="text-lg font-bold font-garnett text-gray-900 mb-2">
                 Do you offer custom enterprise solutions?
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -417,7 +417,7 @@ export default function Pricing() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="bg-white/80 backdrop-blur-xl rounded-2xl p-6 shadow-xl border border-white/50"
             >
-              <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-2">
+              <h3 className="text-lg font-bold font-garnett text-gray-900 mb-2">
                 Is there a free trial available?
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -515,7 +515,7 @@ export default function Pricing() {
               </motion.div>
 
               <motion.h2
-                className="text-[2rem] font-bold font-space-grotesk mb-1"
+                className="text-[2rem] font-bold font-garnett mb-1"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}

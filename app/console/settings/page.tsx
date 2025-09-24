@@ -519,7 +519,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                 <SettingsIcon className="h-8 w-8 text-primary" />
               </motion.div>
               <div>
-                <h1 className="text-2xl font-bold font-space-grotesk text-gray-900">
+                <h1 className="text-2xl font-bold font-garnett text-gray-900">
                   Settings
                 </h1>
                 <p className="text-gray-600 font-segoe text-sm mt-1">
@@ -562,7 +562,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
               transition={{ duration: 0.3 }}
             >
               <div className="mb-4">
-                <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-1">
+                <h3 className="text-lg font-bold font-garnett text-gray-900 mb-1">
                   Settings Menu
                 </h3>
                 <p className="text-xs text-gray-500 font-segoe">
@@ -685,7 +685,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                       <User className="h-6 w-6 text-primary mr-3" />
                     </motion.div>
                     <div>
-                      <h2 className="text-lg font-bold font-space-grotesk text-gray-900">
+                      <h2 className="text-lg font-bold font-garnett text-gray-900">
                         Account Information
                       </h2>
                       <p className="text-sm text-gray-600 font-segoe">
@@ -1018,7 +1018,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                   <div className="flex items-start">
                     <AlertTriangle className="h-6 w-6 text-red-600 mr-3 mt-1 flex-shrink-0" />
                     <div className="flex-1">
-                      <h3 className="text-lg font-bold font-space-grotesk text-red-900 mb-2">
+                      <h3 className="text-lg font-bold font-garnett text-red-900 mb-2">
                         Delete Account
                       </h3>
                       <div className="text-sm text-red-700 font-segoe mb-4 space-y-2">
@@ -1074,7 +1074,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                         <CreditCard className="h-6 w-6 text-primary mr-3" />
                       </motion.div>
                       <div>
-                        <h2 className="text-lg font-bold font-space-grotesk text-gray-900">
+                        <h2 className="text-lg font-bold font-garnett text-gray-900">
                           Current Plan
                         </h2>
                         <p className="text-sm text-gray-600 font-segoe">
@@ -1099,10 +1099,10 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                     transition={isFirstVisit ? { delay: 0.3 } : { duration: 0 }}
                   >
                     <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-xl font-bold font-space-grotesk text-gray-900">
+                      <h3 className="text-xl font-bold font-garnett text-gray-900">
                         {plan.name} Plan
                       </h3>
-                      <div className="text-2xl font-bold font-space-grotesk text-primary">
+                      <div className="text-2xl font-bold font-garnett text-primary">
                         ${plan.price}/{plan.billingCycle}
                       </div>
                     </div>
@@ -1154,7 +1154,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                 >
                   <div className="flex items-center justify-between mb-6">
                     <div>
-                      <h2 className="text-lg font-bold font-space-grotesk text-gray-900">
+                      <h2 className="text-lg font-bold font-garnett text-gray-900">
                         Available Plans
                       </h2>
                       <p className="text-sm text-gray-600 font-segoe">
@@ -1192,10 +1192,10 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                         )}
                         
                         <div className="text-center mb-4">
-                          <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-2">
+                          <h3 className="text-xl font-bold font-garnett text-gray-900 mb-2">
                             {planOption.name}
                           </h3>
-                          <div className="text-3xl font-bold font-space-grotesk text-primary mb-1">
+                          <div className="text-3xl font-bold font-garnett text-primary mb-1">
                             ${planOption.price}
                           </div>
                           <div className="text-sm text-gray-500">per month</div>
@@ -1270,7 +1270,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                       <Key className="h-6 w-6 text-primary mr-3" />
                     </motion.div>
                     <div>
-                      <h2 className="text-lg font-bold font-space-grotesk text-gray-900">
+                      <h2 className="text-lg font-bold font-garnett text-gray-900">
                         API Settings
                       </h2>
                       <p className="text-sm text-gray-600 font-segoe">
@@ -1291,7 +1291,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                 {/* API Keys Section */}
                 <div className="mb-8">
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-md font-semibold font-space-grotesk text-gray-900">
+                    <h3 className="text-md font-semibold font-garnett text-gray-900">
                       API Keys
                     </h3>
                     <motion.button
@@ -1369,7 +1369,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
 
                 {/* Rate Limits Section */}
                 <div className="mb-8">
-                  <h3 className="text-md font-semibold font-space-grotesk text-gray-900 mb-4">
+                  <h3 className="text-md font-semibold font-garnett text-gray-900 mb-4">
                     Rate Limits
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -1381,7 +1381,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                         <span className="text-sm font-medium text-gray-700">Per Minute</span>
                         <Clock className="h-4 w-4 text-blue-500" />
                       </div>
-                      <div className="text-2xl font-bold text-blue-600 font-space-grotesk">
+                      <div className="text-2xl font-bold text-blue-600 font-garnett">
                         {apiSettings.rateLimits.requestsPerMinute}
                       </div>
                       <div className="text-xs text-gray-600">requests/min</div>
@@ -1395,7 +1395,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                         <span className="text-sm font-medium text-gray-700">Per Hour</span>
                         <Activity className="h-4 w-4 text-green-500" />
                       </div>
-                      <div className="text-2xl font-bold text-green-600 font-space-grotesk">
+                      <div className="text-2xl font-bold text-green-600 font-garnett">
                         {apiSettings.rateLimits.requestsPerHour.toLocaleString()}
                       </div>
                       <div className="text-xs text-gray-600">requests/hour</div>
@@ -1409,7 +1409,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                         <span className="text-sm font-medium text-gray-700">Per Day</span>
                         <TrendingUp className="h-4 w-4 text-purple-500" />
                       </div>
-                      <div className="text-2xl font-bold text-purple-600 font-space-grotesk">
+                      <div className="text-2xl font-bold text-purple-600 font-garnett">
                         {apiSettings.rateLimits.requestsPerDay.toLocaleString()}
                       </div>
                       <div className="text-xs text-gray-600">requests/day</div>
@@ -1420,7 +1420,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                 {/* Webhooks Section */}
                 <div className="mb-8">
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-md font-semibold font-space-grotesk text-gray-900">
+                    <h3 className="text-md font-semibold font-garnett text-gray-900">
                       Webhooks
                     </h3>
                     <motion.button
@@ -1484,7 +1484,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
 
                 {/* Security Settings */}
                 <div className="mb-8">
-                  <h3 className="text-md font-semibold font-space-grotesk text-gray-900 mb-4">
+                  <h3 className="text-md font-semibold font-garnett text-gray-900 mb-4">
                     Security & Access Control
                   </h3>
                   
@@ -1571,7 +1571,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
             {/* Notifications */}
             {activeTab === 'notifications' && (
               <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-                <h2 className="text-lg font-bold font-space-grotesk text-gray-900 mb-4">
+                <h2 className="text-lg font-bold font-garnett text-gray-900 mb-4">
                   Notification Preferences
                 </h2>
                 <div className="space-y-4">
@@ -1670,7 +1670,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                       <Shield className="h-6 w-6 text-primary mr-3" />
                     </motion.div>
                     <div>
-                      <h2 className="text-lg font-bold font-space-grotesk text-gray-900">
+                      <h2 className="text-lg font-bold font-garnett text-gray-900">
                         Security Settings
                       </h2>
                       <p className="text-sm text-gray-600 font-segoe">
@@ -1962,7 +1962,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                 <AlertTriangle className="h-6 w-6 text-red-600" />
               </div>
               <div>
-                <h3 className="text-lg font-bold font-space-grotesk text-gray-900">
+                <h3 className="text-lg font-bold font-garnett text-gray-900">
                   Confirm Account Deletion
                 </h3>
                 <p className="text-sm text-gray-600 font-segoe">
@@ -2050,7 +2050,7 @@ function SettingsMainContent({ user, activeTab, setActiveTab, profile, setProfil
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 }}
-                    className={`text-sm font-bold font-space-grotesk ${
+                    className={`text-sm font-bold font-garnett ${
                       toastNotification.type === 'success' ? 'text-green-900' : 'text-red-900'
                     }`}
                   >

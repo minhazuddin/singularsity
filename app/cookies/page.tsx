@@ -57,7 +57,7 @@ export default function Cookies() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-space-grotesk leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
             >
               <span className="text-gray-900">Cookie</span>
               <br />
@@ -96,7 +96,7 @@ export default function Cookies() {
           >
             <div className="flex items-center mb-6">
               <Settings className="h-8 w-8 text-primary mr-3" />
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900">
                 Cookie Preferences
               </h2>
             </div>
@@ -115,7 +115,7 @@ export default function Cookies() {
                   className="bg-white rounded-xl p-6 border border-gray-200"
                 >
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-lg font-bold font-space-grotesk text-gray-900">
+                    <h3 className="text-lg font-bold font-garnett text-gray-900">
                       {type.name}
                     </h3>
                     {type.required ? (
@@ -185,7 +185,7 @@ export default function Cookies() {
             className="bg-white rounded-2xl p-8 lg:p-12 shadow-sm"
           >
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6">
                 What Are Cookies?
               </h2>
               
@@ -193,7 +193,7 @@ export default function Cookies() {
                 Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and provide information to website owners about how users interact with their sites.
               </p>
 
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
                 How We Use Cookies
               </h2>
               
@@ -208,11 +208,11 @@ export default function Cookies() {
                 <li><strong>Performance:</strong> To monitor and optimize website performance and loading times</li>
               </ul>
 
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
                 Types of Cookies We Use
               </h2>
 
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 First-Party Cookies
               </h3>
               <p className="text-gray-600 font-segoe mb-4">
@@ -225,7 +225,7 @@ export default function Cookies() {
                 <li>Provide customer support and troubleshoot issues</li>
               </ul>
 
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Third-Party Cookies
               </h3>
               <p className="text-gray-600 font-segoe mb-4">
@@ -238,25 +238,25 @@ export default function Cookies() {
                 <li><strong>CloudFlare:</strong> To enhance website security and performance</li>
               </ul>
 
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
                 Cookie Duration
               </h2>
               
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Session Cookies
               </h3>
               <p className="text-gray-600 font-segoe mb-4">
                 These temporary cookies are deleted when you close your browser. They help us maintain your session and ensure security during your visit.
               </p>
 
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Persistent Cookies
               </h3>
               <p className="text-gray-600 font-segoe mb-6">
                 These cookies remain on your device for a specified period or until you delete them. They remember your preferences and enable faster, more convenient access to our platform.
               </p>
 
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
                 Managing Your Cookie Preferences
               </h2>
               
@@ -264,7 +264,7 @@ export default function Cookies() {
                 You have several options for managing cookies:
               </p>
 
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Browser Settings
               </h3>
               <p className="text-gray-600 font-segoe mb-4">
@@ -277,14 +277,14 @@ export default function Cookies() {
                 <li>Configure different settings for different websites</li>
               </ul>
 
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Cookie Preference Center
               </h3>
               <p className="text-gray-600 font-segoe mb-6">
                 Use our Cookie Preference Center above to control which types of cookies we use on our website. Your preferences will be saved and respected during your visits.
               </p>
 
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
                 Impact of Disabling Cookies
               </h2>
               
@@ -299,7 +299,7 @@ export default function Cookies() {
                 <li>Customer support may be less effective</li>
               </ul>
 
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
                 Updates to This Policy
               </h2>
               
@@ -307,7 +307,7 @@ export default function Cookies() {
                 We may update this Cookie Policy from time to time to reflect changes in our practices or for legal, operational, or regulatory reasons. We will notify you of any material changes by updating the "Last Updated" date and, where appropriate, providing additional notice through our platform or via email.
               </p>
 
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
                 Contact Us
               </h2>
               

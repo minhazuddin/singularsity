@@ -155,7 +155,7 @@ export default function Blog() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-space-grotesk leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
             >
               <span className="text-gray-900">Insights &</span>
               <br />
@@ -226,7 +226,7 @@ export default function Blog() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold font-space-grotesk text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold font-garnett text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Featured Article
               </span>
@@ -253,7 +253,7 @@ export default function Blog() {
                   <span className="text-gray-500 text-sm">{featuredPost.readTime}</span>
                 </div>
                 
-                <h3 className="text-2xl md:text-3xl font-bold font-space-grotesk text-gray-900 mb-4">
+                <h3 className="text-2xl md:text-3xl font-bold font-garnett text-gray-900 mb-4">
                   {featuredPost.title}
                 </h3>
                 
@@ -290,7 +290,7 @@ export default function Blog() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Latest Articles
               </span>
@@ -326,7 +326,7 @@ export default function Blog() {
                     <span className="text-gray-500 text-xs">{post.readTime}</span>
                   </div>
                   
-                  <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-3 group-hover:text-primary transition-colors duration-200 line-clamp-2">
+                  <h3 className="text-xl font-bold font-garnett text-gray-900 mb-3 group-hover:text-primary transition-colors duration-200 line-clamp-2">
                     {post.title}
                   </h3>
                   
@@ -454,7 +454,7 @@ export default function Blog() {
               </motion.div>
 
               <motion.h2
-                className="text-[2rem] font-bold font-space-grotesk mb-1"
+                className="text-[2rem] font-bold font-garnett mb-1"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}

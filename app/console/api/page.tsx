@@ -254,7 +254,7 @@ function ApiMainContent({
               <ArrowLeft className="h-5 w-5 text-gray-600 group-hover:text-primary transition-colors duration-200" />
             </Link>
             <div>
-              <h1 className="text-2xl font-bold font-space-grotesk text-gray-900 flex items-center">
+              <h1 className="text-2xl font-bold font-garnett text-gray-900 flex items-center">
                 API Management
                 <motion.div
                   animate={{ rotate: [0, 10, -10, 0] }}
@@ -400,7 +400,7 @@ function ApiMainContent({
                     </div>
                     <TrendingUp className="h-4 w-4 text-green-500" />
                   </div>
-                  <div className="text-2xl font-bold text-gray-900 font-space-grotesk">
+                  <div className="text-2xl font-bold text-gray-900 font-garnett">
                     {usageStats.totalRequests.toLocaleString()}
                   </div>
                   <div className="text-sm text-gray-600 font-segoe">Total Requests</div>
@@ -417,7 +417,7 @@ function ApiMainContent({
                     </div>
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                   </div>
-                  <div className="text-2xl font-bold text-gray-900 font-space-grotesk">
+                  <div className="text-2xl font-bold text-gray-900 font-garnett">
                     {usageStats.successRate}%
                   </div>
                   <div className="text-sm text-gray-600 font-segoe">Success Rate</div>
@@ -434,7 +434,7 @@ function ApiMainContent({
                     </div>
                     <Clock className="h-4 w-4 text-purple-500" />
                   </div>
-                  <div className="text-2xl font-bold text-gray-900 font-space-grotesk">
+                  <div className="text-2xl font-bold text-gray-900 font-garnett">
                     {usageStats.avgResponseTime}ms
                   </div>
                   <div className="text-sm text-gray-600 font-segoe">Avg Response Time</div>
@@ -451,7 +451,7 @@ function ApiMainContent({
                     </div>
                     <div className="text-xs text-gray-500">Today</div>
                   </div>
-                  <div className="text-2xl font-bold text-gray-900 font-space-grotesk">
+                  <div className="text-2xl font-bold text-gray-900 font-garnett">
                     {usageStats.requestsToday.toLocaleString()}
                   </div>
                   <div className="text-sm text-gray-600 font-segoe">Requests Today</div>
@@ -466,7 +466,7 @@ function ApiMainContent({
                 transition={{ delay: 0.2 }}
                 className="bg-white rounded-xl p-6 shadow-sm border border-gray-100"
               >
-                <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-4">
+                <h3 className="text-lg font-bold font-garnett text-gray-900 mb-4">
                   Top API Endpoints
                 </h3>
                 <div className="space-y-4">
@@ -508,7 +508,7 @@ function ApiMainContent({
               className="space-y-6"
             >
               <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-                <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-4">
+                <h3 className="text-lg font-bold font-garnett text-gray-900 mb-4">
                   API Endpoints
                 </h3>
                 <div className="space-y-6">
@@ -580,7 +580,7 @@ function ApiMainContent({
             >
               {/* Test Endpoints */}
               <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-                <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-4">
+                <h3 className="text-lg font-bold font-garnett text-gray-900 mb-4">
                   Test API Endpoints
                 </h3>
                 <div className="space-y-4">
@@ -625,7 +625,7 @@ function ApiMainContent({
 
               {/* Test Response */}
               <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-                <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-4">
+                <h3 className="text-lg font-bold font-garnett text-gray-900 mb-4">
                   Response
                 </h3>
                 {testResponse ? (

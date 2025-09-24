@@ -143,7 +143,7 @@ export default function Solutions() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-space-grotesk leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
             >
               <span className="text-gray-900">Tailored</span>
               <br />
@@ -223,7 +223,7 @@ export default function Solutions() {
                     </div>
 
                     {/* Content */}
-                    <h3 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-4 group-hover:text-primary transition-colors duration-300">
+                    <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4 group-hover:text-primary transition-colors duration-300">
                       {solution.name}
                     </h3>
                     
@@ -261,7 +261,7 @@ export default function Solutions() {
       <section className="pt-8 pb-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Industry Success Rates
               </span>
@@ -311,7 +311,7 @@ export default function Solutions() {
                     <span className="text-2xl font-bold text-gray-900">{industry.percentage}%</span>
                   </div>
                 </div>
-                <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-2">
+                <h3 className="text-lg font-bold font-garnett text-gray-900 mb-2">
                   {industry.name}
                 </h3>
                 <p className="text-sm text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -327,7 +327,7 @@ export default function Solutions() {
       <section className="pt-8 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Why Our Solutions Work
               </span>
@@ -347,7 +347,7 @@ export default function Solutions() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Target className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Purpose-Built
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -364,7 +364,7 @@ export default function Solutions() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Expert Support
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -381,7 +381,7 @@ export default function Solutions() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Zap className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Rapid Deployment
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -479,7 +479,7 @@ export default function Solutions() {
               </motion.div>
 
               <motion.h2
-                className="text-[2rem] font-bold font-space-grotesk mb-1"
+                className="text-[2rem] font-bold font-garnett mb-1"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}

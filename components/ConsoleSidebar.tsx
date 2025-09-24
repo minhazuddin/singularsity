@@ -201,7 +201,7 @@ const ConsoleSidebar = ({ user }: ConsoleSidebarProps) => {
               })()}
             </div>
             <div className="flex-1 min-w-0">
-              <p className="text-xs font-semibold text-gray-900 truncate font-space-grotesk">
+              <p className="text-xs font-semibold text-gray-900 truncate font-garnett">
                 {user.name}
               </p>
               <p className="text-xs text-gray-500 truncate font-segoe">
@@ -237,7 +237,7 @@ const ConsoleSidebar = ({ user }: ConsoleSidebarProps) => {
               <div className="flex items-center justify-center mb-1">
                 <FolderOpen className="h-3 w-3 text-primary group-hover:scale-110" />
               </div>
-              <div className="text-sm font-bold text-gray-900 font-space-grotesk group-hover:text-primary">
+              <div className="text-sm font-bold text-gray-900 font-garnett group-hover:text-primary">
                 {user.activeProjects || 12}
               </div>
               <div className="text-xs text-gray-600 font-segoe leading-tight">
@@ -251,7 +251,7 @@ const ConsoleSidebar = ({ user }: ConsoleSidebarProps) => {
               <div className="flex items-center justify-center mb-1">
                 <Download className="h-3 w-3 text-secondary group-hover:scale-110" />
               </div>
-              <div className="text-sm font-bold text-gray-900 font-space-grotesk group-hover:text-secondary">
+              <div className="text-sm font-bold text-gray-900 font-garnett group-hover:text-secondary">
                 {user.totalDownloads || 48}
               </div>
               <div className="text-xs text-gray-600 font-segoe leading-tight">
@@ -283,7 +283,7 @@ const ConsoleSidebar = ({ user }: ConsoleSidebarProps) => {
               }`} />
               {!isCollapsed && (
                 <div className="flex-1">
-                  <div className="font-space-grotesk text-sm">{item.name}</div>
+                  <div className="font-garnett text-sm">{item.name}</div>
                   <div className="text-xs text-gray-500 font-segoe leading-tight">{item.description}</div>
                 </div>
               )}
@@ -298,7 +298,7 @@ const ConsoleSidebar = ({ user }: ConsoleSidebarProps) => {
       {/* Quick Actions */}
       {!isCollapsed && (
         <div className="p-3 border-t border-gray-100">
-          <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 font-space-grotesk">
+          <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 font-garnett">
             Quick Actions
           </h3>
           <div className="space-y-1">

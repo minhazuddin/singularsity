@@ -18,7 +18,7 @@ export default function Privacy() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-space-grotesk leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
             >
               <span className="text-gray-900">Privacy</span>
               <br />
@@ -59,7 +59,7 @@ export default function Privacy() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-2">
+              <h3 className="text-lg font-bold font-garnett text-gray-900 mb-2">
                 Privacy by Design
               </h3>
               <p className="text-gray-600 font-segoe text-sm">
@@ -76,7 +76,7 @@ export default function Privacy() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
                 <Lock className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-2">
+              <h3 className="text-lg font-bold font-garnett text-gray-900 mb-2">
                 Data Minimization
               </h3>
               <p className="text-gray-600 font-segoe text-sm">
@@ -93,7 +93,7 @@ export default function Privacy() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
                 <Eye className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-2">
+              <h3 className="text-lg font-bold font-garnett text-gray-900 mb-2">
                 Transparency
               </h3>
               <p className="text-gray-600 font-segoe text-sm">
@@ -114,11 +114,11 @@ export default function Privacy() {
             className="bg-white rounded-2xl p-8 lg:p-12 shadow-sm"
           >
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6">
                 1. Information We Collect
               </h2>
               
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Personal Information
               </h3>
               <p className="text-gray-600 font-segoe mb-4">
@@ -132,7 +132,7 @@ export default function Privacy() {
                 <li>Communications with our support team</li>
               </ul>
 
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Usage Information
               </h3>
               <p className="text-gray-600 font-segoe mb-4">
@@ -145,14 +145,14 @@ export default function Privacy() {
                 <li>Device and browser information</li>
               </ul>
 
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Data You Upload
               </h3>
               <p className="text-gray-600 font-segoe mb-6">
                 When you use our synthetic data generation services, you may upload data that we process to create synthetic datasets. We implement strict security measures to protect this data and use it solely for the purpose of generating synthetic data according to your specifications.
               </p>
 
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
                 2. How We Use Your Information
               </h2>
               
@@ -169,7 +169,7 @@ export default function Privacy() {
                 <li>Providing customer support and technical assistance</li>
               </ul>
 
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
                 3. Information Sharing and Disclosure
               </h2>
               
@@ -177,28 +177,28 @@ export default function Privacy() {
                 We do not sell, rent, or share your personal information with third parties except in the following circumstances:
               </p>
               
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Service Providers
               </h3>
               <p className="text-gray-600 font-segoe mb-4">
                 We may share information with trusted service providers who assist us in operating our platform, such as cloud infrastructure providers, payment processors, and analytics services. These providers are contractually obligated to protect your information.
               </p>
 
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Legal Requirements
               </h3>
               <p className="text-gray-600 font-segoe mb-4">
                 We may disclose information if required by law, regulation, legal process, or governmental request, or to protect our rights, property, or safety.
               </p>
 
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Business Transfers
               </h3>
               <p className="text-gray-600 font-segoe mb-6">
                 In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of the transaction, subject to equivalent privacy protections.
               </p>
 
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
                 4. Data Security
               </h2>
               
@@ -214,7 +214,7 @@ export default function Privacy() {
                 <li>Employee security training and background checks</li>
               </ul>
 
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
                 5. Your Rights and Choices
               </h2>
               
@@ -234,7 +234,7 @@ export default function Privacy() {
                 To exercise these rights, please contact us at privacy@singularsity.com. We will respond to your request within 30 days.
               </p>
 
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
                 6. Data Retention
               </h2>
               
@@ -242,7 +242,7 @@ export default function Privacy() {
                 We retain your personal information only as long as necessary to provide our services and comply with legal obligations. Account information is typically retained while your account is active and for a reasonable period thereafter. Data you upload for synthetic data generation is processed and then securely deleted according to our data retention schedule.
               </p>
 
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
                 7. International Data Transfers
               </h2>
               
@@ -250,7 +250,7 @@ export default function Privacy() {
                 Our services are operated from the United States, and your information may be transferred to and processed in countries other than your own. We implement appropriate safeguards, including standard contractual clauses and adequacy decisions, to ensure your information receives equivalent protection.
               </p>
 
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
                 8. Children's Privacy
               </h2>
               
@@ -258,7 +258,7 @@ export default function Privacy() {
                 Our services are not intended for individuals under the age of 16, and we do not knowingly collect personal information from children. If we learn that we have collected information from a child, we will take steps to delete it promptly.
               </p>
 
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
                 9. Changes to This Policy
               </h2>
               
@@ -266,7 +266,7 @@ export default function Privacy() {
                 We may update this Privacy Policy periodically to reflect changes in our practices or applicable law. We will notify you of material changes by email or through our platform and update the "Last Updated" date at the top of this policy.
               </p>
 
-              <h2 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-6 mt-12">
+              <h2 className="text-2xl font-bold font-garnett text-gray-900 mb-6 mt-12">
                 10. Contact Us
               </h2>
               

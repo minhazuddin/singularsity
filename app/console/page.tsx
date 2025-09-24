@@ -218,7 +218,7 @@ function ConsoleMainContent({ user }: { user: User }) {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-6">
             <div>
-              <h1 className="text-2xl font-bold font-space-grotesk text-gray-900 flex items-center">
+              <h1 className="text-2xl font-bold font-garnett text-gray-900 flex items-center">
                 Dashboard
                 <motion.div
                   animate={{ rotate: 360 }}
@@ -351,7 +351,7 @@ function ConsoleMainContent({ user }: { user: User }) {
                   </div>
                   
                   <div className="space-y-1">
-                    <div className="text-2xl font-bold font-space-grotesk text-gray-900 group-hover:text-primary transition-colors duration-300">
+                    <div className="text-2xl font-bold font-garnett text-gray-900 group-hover:text-primary transition-colors duration-300">
                       {stat.value}
                     </div>
                     <div className="text-sm font-medium text-gray-700 font-segoe">
@@ -394,7 +394,7 @@ function ConsoleMainContent({ user }: { user: User }) {
                 <Database className="h-5 w-5 text-white" />
               </div>
               <div>
-                <h2 className="text-lg font-bold font-space-grotesk text-gray-900">
+                <h2 className="text-lg font-bold font-garnett text-gray-900">
                   Plan Usage
                 </h2>
                 <p className="text-sm text-gray-600 font-segoe">
@@ -418,7 +418,7 @@ function ConsoleMainContent({ user }: { user: User }) {
                 Data Generation
               </span>
               <div className="text-right">
-                <span className="text-lg font-bold text-gray-900 font-space-grotesk">
+                <span className="text-lg font-bold text-gray-900 font-garnett">
                   {((user.dataGenerated / user.dataLimit) * 100).toFixed(1)}%
                 </span>
                 <span className="text-sm text-gray-600 font-segoe ml-1">used</span>
@@ -457,19 +457,19 @@ function ConsoleMainContent({ user }: { user: User }) {
             
             <div className="grid grid-cols-3 gap-4 pt-2">
               <div className="text-center">
-                <div className="text-lg font-bold text-gray-900 font-space-grotesk">
+                <div className="text-lg font-bold text-gray-900 font-garnett">
                   {(user.dataGenerated / 1000000).toFixed(1)}M
                 </div>
                 <div className="text-xs text-gray-600 font-segoe">Used</div>
               </div>
               <div className="text-center">
-                <div className="text-lg font-bold text-green-600 font-space-grotesk">
+                <div className="text-lg font-bold text-green-600 font-garnett">
                   {((user.dataLimit - user.dataGenerated) / 1000000).toFixed(1)}M
                 </div>
                 <div className="text-xs text-gray-600 font-segoe">Remaining</div>
               </div>
               <div className="text-center">
-                <div className="text-lg font-bold text-gray-900 font-space-grotesk">
+                <div className="text-lg font-bold text-gray-900 font-garnett">
                   {(user.dataLimit / 1000000).toFixed(0)}M
                 </div>
                 <div className="text-xs text-gray-600 font-segoe">Total Limit</div>
@@ -491,7 +491,7 @@ function ConsoleMainContent({ user }: { user: User }) {
                   <BarChart className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <h2 className="text-lg font-bold font-space-grotesk text-gray-900">
+                  <h2 className="text-lg font-bold font-garnett text-gray-900">
                     Recent Projects
                   </h2>
                   <p className="text-sm text-gray-600 font-segoe">
@@ -541,7 +541,7 @@ function ConsoleMainContent({ user }: { user: User }) {
                     </div>
                     
                     <div className="flex-1">
-                      <h3 className="font-semibold text-gray-900 font-space-grotesk text-base group-hover:text-primary transition-colors duration-300">
+                      <h3 className="font-semibold text-gray-900 font-garnett text-base group-hover:text-primary transition-colors duration-300">
                         {project.name}
                       </h3>
                       <div className="flex items-center space-x-4 mt-2">
@@ -595,7 +595,7 @@ function ConsoleMainContent({ user }: { user: User }) {
         <motion.div
         >
           <div className="mb-4">
-            <h2 className="text-lg font-bold font-space-grotesk text-gray-900 mb-2">
+            <h2 className="text-lg font-bold font-garnett text-gray-900 mb-2">
               Quick Actions
             </h2>
             <p className="text-sm text-gray-600 font-segoe">
@@ -636,7 +636,7 @@ function ConsoleMainContent({ user }: { user: User }) {
                     </div>
                     <Zap className="h-5 w-5 text-yellow-300" />
                   </div>
-                  <h3 className="font-bold font-space-grotesk text-lg mb-2">Generate New Data</h3>
+                  <h3 className="font-bold font-garnett text-lg mb-2">Generate New Data</h3>
                   <p className="text-sm opacity-90 font-segoe">Create high-quality synthetic datasets with AI</p>
                 </div>
               </Link>
@@ -660,7 +660,7 @@ function ConsoleMainContent({ user }: { user: User }) {
                   </div>
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                 </div>
-                <h3 className="font-bold font-space-grotesk text-gray-900 text-lg mb-2 group-hover:text-primary transition-colors duration-300">
+                <h3 className="font-bold font-garnett text-gray-900 text-lg mb-2 group-hover:text-primary transition-colors duration-300">
                   Manage Projects
                 </h3>
                 <p className="text-sm text-gray-600 font-segoe">View, organize and download your datasets</p>
@@ -689,7 +689,7 @@ function ConsoleMainContent({ user }: { user: User }) {
                     className="w-2 h-2 bg-blue-500 rounded-full"
                   />
                 </div>
-                <h3 className="font-bold font-space-grotesk text-gray-900 text-lg mb-2 group-hover:text-primary transition-colors duration-300">
+                <h3 className="font-bold font-garnett text-gray-900 text-lg mb-2 group-hover:text-primary transition-colors duration-300">
                   View Analytics
                 </h3>
                 <p className="text-sm text-gray-600 font-segoe">Detailed insights and performance reports</p>

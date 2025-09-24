@@ -116,7 +116,7 @@ export default function Support() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-space-grotesk leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
             >
               <span className="text-gray-900">Help</span>
               <br />
@@ -162,7 +162,7 @@ export default function Support() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <MessageSquare className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Live Chat Support
               </h3>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
@@ -183,7 +183,7 @@ export default function Support() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Book className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Documentation
               </h3>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
@@ -207,7 +207,7 @@ export default function Support() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Clock className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Support Hours
               </h3>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
@@ -230,7 +230,7 @@ export default function Support() {
       <section className="pt-8 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Support Resources
               </span>
@@ -257,7 +257,7 @@ export default function Support() {
                     {resource.category}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-lg font-bold font-garnett text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300">
                   {resource.title}
                 </h3>
                 <p className="text-gray-600 font-light text-sm mb-4">
@@ -280,7 +280,7 @@ export default function Support() {
       <section className="pt-8 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Frequently Asked Questions
               </span>
@@ -304,7 +304,7 @@ export default function Support() {
                     <HelpCircle className="h-4 w-4 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-3">
+                    <h3 className="text-xl font-bold font-garnett text-gray-900 mb-3">
                       {faq.question}
                     </h3>
                     <p className="text-gray-600 font-light leading-relaxed">
@@ -335,7 +335,7 @@ export default function Support() {
       <section className="pt-8 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Community & Learning
               </span>
@@ -355,7 +355,7 @@ export default function Support() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <MessageSquare className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Community Forum
               </h3>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
@@ -379,7 +379,7 @@ export default function Support() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Video className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Webinars
               </h3>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
@@ -403,7 +403,7 @@ export default function Support() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Book className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Knowledge Base
               </h3>
               <p className="text-gray-600 font-light leading-relaxed mb-6">
@@ -426,7 +426,7 @@ export default function Support() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-6 md:mb-0">
-              <h3 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-2">
+              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-2">
                 System Status
               </h3>
               <p className="text-gray-600 font-light leading-relaxed">

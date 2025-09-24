@@ -77,7 +77,7 @@ export default function APIIntegration() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-space-grotesk leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
             >
               <span className="text-gray-900">Powerful</span>
               <br />
@@ -125,7 +125,7 @@ export default function APIIntegration() {
       <section className="pt-8 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Enterprise-Grade API Features
               </span>
@@ -145,7 +145,7 @@ export default function APIIntegration() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Code className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 RESTful API Design
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -162,7 +162,7 @@ export default function APIIntegration() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Zap className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Real-Time Generation
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -179,7 +179,7 @@ export default function APIIntegration() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Shield className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Authentication & Security
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -196,7 +196,7 @@ export default function APIIntegration() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Database className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Batch Processing
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -213,7 +213,7 @@ export default function APIIntegration() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Settings className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Configuration Management
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -230,7 +230,7 @@ export default function APIIntegration() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Globe className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-garnett text-gray-900 mb-4">
                 Global CDN & Edge
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -245,7 +245,7 @@ export default function APIIntegration() {
       <section className="pt-8 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 SDKs & Integration Options
               </span>
@@ -262,7 +262,7 @@ export default function APIIntegration() {
               transition={{ duration: 0.6 }}
               className="bg-white rounded-xl p-8 shadow-lg"
             >
-              <h3 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
                 Native SDKs
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -294,7 +294,7 @@ export default function APIIntegration() {
               transition={{ duration: 0.6 }}
               className="bg-white rounded-xl p-8 shadow-lg"
             >
-              <h3 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
                 Platform Integrations
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -326,7 +326,7 @@ export default function APIIntegration() {
               
               className="bg-white rounded-xl p-8 shadow-lg"
             >
-              <h3 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
                 Webhook & Event Streaming
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -358,7 +358,7 @@ export default function APIIntegration() {
               
               className="bg-white rounded-xl p-8 shadow-lg"
             >
-              <h3 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
                 Command Line Interface
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -391,7 +391,7 @@ export default function APIIntegration() {
       <section className="pt-8 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Simple Integration Example
               </span>
@@ -446,7 +446,7 @@ print(f"Generated {result.count} records")`}
       <section className="pt-8 pb-16 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 API Performance Metrics
               </span>
@@ -466,7 +466,7 @@ print(f"Generated {result.count} records")`}
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Zap className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold font-space-grotesk text-gray-900 mb-2">
+              <h3 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
                 &lt;200ms
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-lg">
@@ -483,7 +483,7 @@ print(f"Generated {result.count} records")`}
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <CloudLightning className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold font-space-grotesk text-gray-900 mb-2">
+              <h3 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
                 99.99%
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-lg">
@@ -500,7 +500,7 @@ print(f"Generated {result.count} records")`}
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Cpu className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold font-space-grotesk text-gray-900 mb-2">
+              <h3 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
                 10K+
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-lg">
@@ -598,7 +598,7 @@ print(f"Generated {result.count} records")`}
               </motion.div>
 
               <motion.h2
-                className="text-[2rem] font-bold font-space-grotesk mb-1"
+                className="text-[2rem] font-bold font-garnett mb-1"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}

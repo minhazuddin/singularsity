@@ -76,7 +76,7 @@ export default function AIMLTraining() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-xl lg:text-3xl xl:text-4xl font-bold font-space-grotesk leading-tight mb-4"
+              className="text-xl lg:text-3xl xl:text-4xl font-bold font-garnett leading-tight mb-4"
             >
               <span className="text-gray-900">AI/ML</span>
               <br />
@@ -124,7 +124,7 @@ export default function AIMLTraining() {
       <section className="pt-8 pb-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Machine Learning Training Challenges
               </span>
@@ -141,7 +141,7 @@ export default function AIMLTraining() {
               transition={{ duration: 0.6 }}
               className="bg-red-50 border-l-4 border-red-200 p-6 rounded-lg"
             >
-              <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-3">
+              <h3 className="text-lg font-bold font-garnett text-gray-900 mb-3">
                 Data Scarcity
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-sm">
@@ -155,7 +155,7 @@ export default function AIMLTraining() {
               
               className="bg-orange-50 border-l-4 border-orange-200 p-6 rounded-lg"
             >
-              <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-3">
+              <h3 className="text-lg font-bold font-garnett text-gray-900 mb-3">
                 Class Imbalance
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-sm">
@@ -169,7 +169,7 @@ export default function AIMLTraining() {
               
               className="bg-yellow-50 border-l-4 border-yellow-200 p-6 rounded-lg"
             >
-              <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-3">
+              <h3 className="text-lg font-bold font-garnett text-gray-900 mb-3">
                 Privacy Restrictions
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-sm">
@@ -183,7 +183,7 @@ export default function AIMLTraining() {
               
               className="bg-blue-50 border-l-4 border-blue-200 p-6 rounded-lg"
             >
-              <h3 className="text-lg font-bold font-space-grotesk text-gray-900 mb-3">
+              <h3 className="text-lg font-bold font-garnett text-gray-900 mb-3">
                 Cost & Time
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 text-sm">
@@ -198,7 +198,7 @@ export default function AIMLTraining() {
       <section className="pt-8 pb-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Synthetic Data ML Solutions
               </span>
@@ -218,7 +218,7 @@ export default function AIMLTraining() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Database className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
                 Data Augmentation
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -249,7 +249,7 @@ export default function AIMLTraining() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Target className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
                 Class Balancing
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -280,7 +280,7 @@ export default function AIMLTraining() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Shield className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
                 Privacy-Preserving Training
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -311,7 +311,7 @@ export default function AIMLTraining() {
               <div className="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mb-6">
                 <Zap className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
                 Rapid Prototyping
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-6">
@@ -340,7 +340,7 @@ export default function AIMLTraining() {
       <section className="pt-8 pb-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Supported Model Types
               </span>
@@ -360,7 +360,7 @@ export default function AIMLTraining() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Brain className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
                 Deep Learning
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-4">
@@ -380,7 +380,7 @@ export default function AIMLTraining() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <BarChart className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
                 Traditional ML
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-4">
@@ -400,7 +400,7 @@ export default function AIMLTraining() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <TrendingUp className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
                 Reinforcement Learning
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300 mb-4">
@@ -418,7 +418,7 @@ export default function AIMLTraining() {
       <section className="pt-8 pb-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold font-space-grotesk text-gray-900 mb-4">
+            <h2 className="text-[2rem] font-bold font-garnett text-gray-900 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">
                 Proven Results
               </span>
@@ -438,7 +438,7 @@ export default function AIMLTraining() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <TrendingUp className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold font-space-grotesk text-gray-900 mb-2">
+              <h3 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
                 45%
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -455,7 +455,7 @@ export default function AIMLTraining() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Zap className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold font-space-grotesk text-gray-900 mb-2">
+              <h3 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
                 75%
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -472,7 +472,7 @@ export default function AIMLTraining() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Target className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold font-space-grotesk text-gray-900 mb-2">
+              <h3 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
                 90%
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -489,7 +489,7 @@ export default function AIMLTraining() {
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
                 <Cpu className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-3xl font-bold font-space-grotesk text-gray-900 mb-2">
+              <h3 className="text-3xl font-bold font-garnett text-gray-900 mb-2">
                 60%
               </h3>
               <p className="text-gray-600 font-light leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
@@ -587,7 +587,7 @@ export default function AIMLTraining() {
               </motion.div>
 
               <motion.h2
-                className="text-[2rem] font-bold font-space-grotesk mb-1"
+                className="text-[2rem] font-bold font-garnett mb-1"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}

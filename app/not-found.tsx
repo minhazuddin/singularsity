@@ -53,7 +53,7 @@ export default function NotFound() {
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                 >
-                  <div className="text-9xl font-bold font-space-grotesk text-gradient mb-4">
+                  <div className="text-9xl font-bold font-garnett text-gradient mb-4">
                     4🤖4
                   </div>
                   <motion.div
@@ -67,7 +67,7 @@ export default function NotFound() {
                 
                 {/* Friendly animated message */}
                 <motion.h1 
-                  className="text-[2rem] font-bold font-space-grotesk text-gray-800 mb-6"
+                  className="text-[2rem] font-bold font-garnett text-gray-800 mb-6"
                   animate={{ scale: [1, 1.02, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
@@ -90,7 +90,7 @@ export default function NotFound() {
                     <Sparkles className="w-8 h-8 text-primary" />
                   </div>
                   
-                  <h2 className="text-2xl font-bold font-space-grotesk text-gray-800 mb-4">
+                  <h2 className="text-2xl font-bold font-garnett text-gray-800 mb-4">
                     Our AI is Generating New Data!
                   </h2>
                   

@@ -39,7 +39,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold font-space-grotesk mb-6">Services</h3>
+            <h3 className="text-lg font-semibold font-garnett mb-6">Services</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/services/data-generation" className="text-gray-300 hover:text-primary transition-colors duration-200">
@@ -71,7 +71,7 @@ const Footer = () => {
 
           {/* Solutions */}
           <div>
-            <h3 className="text-lg font-semibold font-space-grotesk mb-6">Solutions</h3>
+            <h3 className="text-lg font-semibold font-garnett mb-6">Solutions</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/solutions/ai-ml-training" className="text-gray-300 hover:text-primary transition-colors duration-200">
@@ -103,7 +103,7 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h3 className="text-lg font-semibold font-space-grotesk mb-6">Company</h3>
+            <h3 className="text-lg font-semibold font-garnett mb-6">Company</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/about" className="text-gray-300 hover:text-primary transition-colors duration-200">

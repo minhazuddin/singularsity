@@ -26,7 +26,7 @@ module.exports = {
         foreground: 'var(--foreground)',
       },
       fontFamily: {
-        'space-grotesk': ['Space Grotesk', 'sans-serif'],
+        'garnett': ['Plus Jakarta Sans', 'sans-serif'],
         'segoe': ['Segoe UI', 'sans-serif'],
       },
       fontSize: {

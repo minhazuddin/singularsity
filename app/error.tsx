@@ -23,7 +23,7 @@ export default function Error({
           <AlertTriangle className="h-8 w-8 text-red-600" />
         </div>
         
-        <h1 className="text-2xl font-bold font-space-grotesk text-gray-900 mb-4">
+        <h1 className="text-2xl font-bold font-garnett text-gray-900 mb-4">
           Something went wrong
         </h1>
         

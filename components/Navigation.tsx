@@ -281,7 +281,7 @@ const Navigation = () => {
                         <div className="px-6 py-4 bg-gradient-to-r from-primary/5 to-secondary/5 border-b border-gray-100">
                           <div className="flex items-center">
                             <Sparkles className="h-5 w-5 text-primary mr-2" />
-                            <h3 className="font-semibold text-gray-900 font-space-grotesk">
+                            <h3 className="font-semibold text-gray-900 font-garnett">
                               {item.name}
                             </h3>
                           </div>
@@ -312,7 +312,7 @@ const Navigation = () => {
                                     
                                     <div className="flex-1 min-w-0">
                                       <div className="flex items-center justify-between">
-                                        <h4 className="text-sm font-semibold text-gray-900 font-space-grotesk group-hover:text-primary transition-colors duration-300">
+                                        <h4 className="text-sm font-semibold text-gray-900 font-garnett group-hover:text-primary transition-colors duration-300">
                                           {dropdownItem.name}
                                         </h4>
                                         <ArrowRight className="h-4 w-4 text-gray-400 group-hover:text-primary group-hover:translate-x-1 transition-all duration-300" />
@@ -412,7 +412,7 @@ const Navigation = () => {
                       <div className="flex items-center justify-between">
                         <div className="flex items-center">
                           <Database className="h-5 w-5 text-primary mr-2" />
-                          <h3 className="font-semibold text-gray-900 font-space-grotesk">
+                          <h3 className="font-semibold text-gray-900 font-garnett">
                             Data Usage
                           </h3>
                         </div>
@@ -444,7 +444,7 @@ const Navigation = () => {
 
                         <div className="grid grid-cols-2 gap-4">
                           <div className="text-center p-3 bg-gray-50 rounded-lg">
-                            <div className="text-lg font-bold text-gray-900 font-space-grotesk">
+                            <div className="text-lg font-bold text-gray-900 font-garnett">
                               {userData.projectsCount}
                             </div>
                             <div className="text-xs text-gray-600">
@@ -452,7 +452,7 @@ const Navigation = () => {
                             </div>
                           </div>
                           <div className="text-center p-3 bg-gray-50 rounded-lg">
-                            <div className="text-lg font-bold text-gray-900 font-space-grotesk">
+                            <div className="text-lg font-bold text-gray-900 font-garnett">
                               {userData.downloadsCount}
                             </div>
                             <div className="text-xs text-gray-600">
@@ -518,7 +518,7 @@ const Navigation = () => {
                           <User className="h-5 w-5 text-white" />
                         </div>
                         <div>
-                          <div className="font-semibold text-gray-900 font-space-grotesk">
+                          <div className="font-semibold text-gray-900 font-garnett">
                             {userEmail?.split('@')[0] || 'User'}
                           </div>
                           <div className="text-sm text-gray-600 font-segoe">
