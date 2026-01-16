@@ -27,7 +27,7 @@
     "lucide-react": "^0.544.0",
     "mammoth": "^1.6.0",
     "ml-matrix": "^6.10.4",
-    "next": "^15.5.3",
+    "next": "15.5.9",
     "openai": "^5.1.0",
     "papaparse": "^5.4.1",
     "react": "^19.1.1",
