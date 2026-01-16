@@ -264,10 +264,9 @@ export default function Pricing() {
               return (
                 <motion.div
                   key={plan.name}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 + index * 0.1, ease: "easeOut" }}
                   className={`relative bg-white/80 backdrop-blur-xl rounded-3xl shadow-xl hover:shadow-2xl p-4 flex flex-col h-full border border-white/50 transition-all duration-500 group ${
                     plan.popular ? 'ring-2 ring-emerald-500 scale-105' : ''
                   }`}
